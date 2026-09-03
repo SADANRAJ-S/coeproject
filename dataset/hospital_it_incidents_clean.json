@@ -1,0 +1,1002 @@
+[
+  {
+    "incident_id": "DS-1100",
+    "description": "Shift A Ticket: Printer unavailable in 4th floor nursing station. Affecting patient care.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1081",
+    "description": "STAT: Clinical SSO tap card login failing across nursing stations. Needs immediate IT response.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1105",
+    "description": "Clinical Alert: Printer unavailable in 4th floor nursing station. Affecting patient care.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1004",
+    "description": "Shift A Ticket: Outpatient clinic lab result module unresponsive. Workstation reboot did not fix.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1086",
+    "description": "Shift A Ticket: Single sign-on authentication gateway rejecting clinical credentials.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1073",
+    "description": "Urgent: Patient demographics entry screen locked up. Please resolve immediately.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1094",
+    "description": "Recurring issue: HL7 interface queue resend required for laboratory feed. Workstation reboot did not fix.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1044",
+    "description": "Recurring issue: Medication dispensing order queue delayed in pharmacy module. Please resolve immediately.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1012",
+    "description": "Legacy station lab result cache overflow in version 5.1. Needs immediate IT response.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1037",
+    "description": "Recurring issue: Medication module timeout during order entry on floor 3. Needs immediate IT response.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1065",
+    "description": "Recurring issue: PACS DICOM streaming gateway daemon frozen. Please resolve immediately.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1076",
+    "description": "Clinical Alert: EHR Core patient chart registration session freeze. Affecting patient care.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1089",
+    "description": "Clinical Alert: HL7 ORU_R01 lab message queue stuck in pending state. Needs immediate IT response.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1039",
+    "description": "Clinical Alert: Pharmacy order queue listener hanging on unit dose validation. Affecting patient care.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1087",
+    "description": "Shift A Ticket: Single sign-on authentication gateway rejecting clinical credentials. Affecting patient care.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1015",
+    "description": "STAT: Lab result screen blank on legacy workstation running LabSys 5.1.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1061",
+    "description": "Urgent: PACS DICOM streaming gateway daemon frozen. Workstation reboot did not fix.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1059",
+    "description": "Shift A Ticket: PACS DICOM streaming gateway daemon frozen. Workstation reboot did not fix.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1043",
+    "description": "Shift A Ticket: MedFlow order entry screen freeze during STAT dose entry. Please resolve immediately.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1020",
+    "description": "Urgent: LabSys 5.1 client terminal displays cache read error. Workstation reboot did not fix.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1016",
+    "description": "Shift A Ticket: LabSys 5.1 client station freeze during result lookup.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1062",
+    "description": "Clinical Alert: PACSView DICOM router port unresponsive for MRI transfer.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1064",
+    "description": "Reported by Nursing: PACS DICOM streaming gateway daemon frozen. Affecting patient care.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1071",
+    "description": "Shift A Ticket: EHR Core patient chart registration session freeze. Affecting patient care.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1077",
+    "description": "Urgent: Patient admission intake screen non-responsive. Needs immediate IT response.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1103",
+    "description": "Print spooler service hung for pharmacy chart printer. Please resolve immediately.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1008",
+    "description": "Shift A Ticket: Lab results failing to populate in emergency department workstation. Please resolve immediately.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1057",
+    "description": "Reported by Nursing: PACS DICOM gateway connection failed for radiology scanner.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1051",
+    "description": "Clinical Alert: CT scan images buffering slowly on PACSView radiology workstation. Affecting patient care.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1093",
+    "description": "STAT: HL7 interface queue resend required for laboratory feed. Please resolve immediately.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1046",
+    "description": "Reported by Nursing: CT scan images buffering slowly on PACSView radiology workstation. Please resolve immediately.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1027",
+    "description": "Recurring issue: LabSys SQL query thread pool deadlock.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1038",
+    "description": "Urgent: eMAR electronic medication administration record order submission frozen.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1028",
+    "description": "Recurring issue: LabSys DB connection pool exhausted during peak shift change.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1013",
+    "description": "Legacy station lab result cache overflow in version 5.1. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1106",
+    "description": "Nursing station lab label printer spooler error. Affecting patient care.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1006",
+    "description": "Recurring issue: Lab result viewer blank for hematology orders.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1068",
+    "description": "Recurring issue: EHR registration module UI thread deadlock. Affecting patient care.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1056",
+    "description": "Shift A Ticket: PACS DICOM streaming gateway daemon frozen.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1058",
+    "description": "Urgent: PACS DICOM gateway connection failed for radiology scanner. Please resolve immediately.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1017",
+    "description": "Legacy LabSys 5.1 client local cache corrupted. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1048",
+    "description": "Shift A Ticket: PACS image loading slow in ER radiology station.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1074",
+    "description": "Urgent: Patient admission intake screen non-responsive. Please resolve immediately.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1009",
+    "description": "Reported by Nursing: Lab result viewer displays infinite loading spinner on floor 3. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1052",
+    "description": "Shift A Ticket: PACS CT scan DICOM image frame drop during viewing. Workstation reboot did not fix.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1079",
+    "description": "Reported by Nursing: Single sign-on authentication gateway rejecting clinical credentials. Needs immediate IT response.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1080",
+    "description": "Clinical Alert: Single sign-on authentication gateway rejecting clinical credentials. Please resolve immediately.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1053",
+    "description": "STAT: CT scan images buffering slowly on PACSView radiology workstation. Affecting patient care.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1034",
+    "description": "Pharmacy order queue listener hanging on unit dose validation. Please resolve immediately.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1047",
+    "description": "Shift A Ticket: Radiology PACS workstation image rendering delayed. Needs immediate IT response.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1042",
+    "description": "Urgent: Medication module timeout during order entry on floor 3. Please resolve immediately.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1107",
+    "description": "Recurring issue: Nursing station lab label printer spooler error. Workstation reboot did not fix.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1082",
+    "description": "Recurring issue: Clinical SSO tap card login failing across nursing stations. Workstation reboot did not fix.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1097",
+    "description": "STAT: Interface gateway message pipeline halted for lab integration.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1066",
+    "description": "Reported by Nursing: PACS DICOM gateway connection failed for radiology scanner. Please resolve immediately.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1110",
+    "description": "Recurring issue: Nursing station lab label printer spooler error. Please resolve immediately.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1032",
+    "description": "LabSys database query threshold exceeded 15 seconds. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1014",
+    "description": "Recurring issue: LabSys 5.1 client terminal displays cache read error.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1035",
+    "description": "Reported by Nursing: MedFlow order entry screen freeze during STAT dose entry. Please resolve immediately.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1023",
+    "description": "Recurring issue: LabSys DB connection pool exhausted during peak shift change. Please resolve immediately.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1011",
+    "description": "Urgent: Outpatient clinic lab result module unresponsive. Please resolve immediately.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1072",
+    "description": "Clinical Alert: EHR registration module UI thread deadlock. Needs immediate IT response.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1104",
+    "description": "Clinical Alert: Print spooler service hung for pharmacy chart printer. Needs immediate IT response.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1055",
+    "description": "Clinical Alert: PACS radiology workstation DICOM cache overflow.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1001",
+    "description": "Shift A Ticket: Lab results not updating after analyzer completion. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1010",
+    "description": "STAT: Lab result viewer blank for hematology orders. Please resolve immediately.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1054",
+    "description": "Recurring issue: PACS image loading slow in ER radiology station. Please resolve immediately.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1092",
+    "description": "Clinical Alert: HL7 ORU_R01 lab message queue stuck in pending state. Workstation reboot did not fix.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1031",
+    "description": "Clinical Alert: Lab database queries timing out for pathology lookup. Please resolve immediately.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1022",
+    "description": "STAT: Legacy station lab result cache overflow in version 5.1. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1026",
+    "description": "Shift A Ticket: LabSys SQL query thread pool deadlock. Please resolve immediately.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1069",
+    "description": "Patient admission intake screen non-responsive. Affecting patient care.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1003",
+    "description": "Reported by Nursing: LabSys viewer timeout when opening chemistry panel. Needs immediate IT response.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1050",
+    "description": "STAT: PACS image loading slow in ER radiology station.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1029",
+    "description": "Clinical Alert: LabSys database query threshold exceeded 15 seconds. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1108",
+    "description": "Recurring issue: Patient wristband thermal printer offline in triage. Needs immediate IT response.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1098",
+    "description": "STAT: HL7 interface queue resend required for laboratory feed.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1070",
+    "description": "STAT: Patient registration screen freezing during intake. Workstation reboot did not fix.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1025",
+    "description": "Recurring issue: Lab database queries timing out for pathology lookup. Needs immediate IT response.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1090",
+    "description": "Recurring issue: Interface message queue delayed HL7 lab feed. Please resolve immediately.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1063",
+    "description": "PACSView DICOM router port unresponsive for MRI transfer.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1045",
+    "description": "Shift A Ticket: PACSView image streaming latency high in trauma bay. Please resolve immediately.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Performance",
+    "severity": "Medium",
+    "target_resolution_id": "KA-019",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1091",
+    "description": "Shift A Ticket: HL7 ORU_R01 lab message queue stuck in pending state. Please resolve immediately.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1083",
+    "description": "Reported by Nursing: Single sign-on authentication gateway rejecting clinical credentials. Workstation reboot did not fix.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1030",
+    "description": "STAT: Database connection timeout on LabSys clinical database server. Workstation reboot did not fix.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1021",
+    "description": "Clinical Alert: Legacy station lab result cache overflow in version 5.1. Needs immediate IT response.",
+    "system": "LabSys",
+    "version": "5.1",
+    "category": "Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-003",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1060",
+    "description": "Clinical Alert: PACS DICOM streaming gateway daemon frozen. Workstation reboot did not fix.",
+    "system": "PACSView",
+    "version": "4.1",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-021",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1109",
+    "description": "Urgent: Printer unavailable in 4th floor nursing station. Needs immediate IT response.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1102",
+    "description": "Recurring issue: Patient wristband thermal printer offline in triage. Workstation reboot did not fix.",
+    "system": "PrintManager",
+    "version": "1.4",
+    "category": "Infrastructure",
+    "severity": "Low",
+    "target_resolution_id": "KA-002",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1067",
+    "description": "Recurring issue: Patient registration screen freezing during intake. Please resolve immediately.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1095",
+    "description": "Reported by Nursing: HL7 ORU_R01 lab message queue stuck in pending state. Workstation reboot did not fix.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1075",
+    "description": "Reported by Nursing: EHR registration module UI thread deadlock. Please resolve immediately.",
+    "system": "EHRCore",
+    "version": "6.0",
+    "category": "UI/Application",
+    "severity": "Medium",
+    "target_resolution_id": "KA-005",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1007",
+    "description": "STAT: Lab results not updating after analyzer completion. Workstation reboot did not fix.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1024",
+    "description": "STAT: LabSys SQL query thread pool deadlock. Affecting patient care.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Database",
+    "severity": "High",
+    "target_resolution_id": "KA-022",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1002",
+    "description": "Recurring issue: Lab results are not loading for users in ICU. Needs immediate IT response.",
+    "system": "LabSys",
+    "version": "5.4",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-014",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1041",
+    "description": "Medication dispensing order queue delayed in pharmacy module.",
+    "system": "MedFlow",
+    "version": "3.2",
+    "category": "Application",
+    "severity": "High",
+    "target_resolution_id": "KA-008",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1085",
+    "description": "Shift A Ticket: Clinical SSO tap card login failing across nursing stations. Affecting patient care.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1099",
+    "description": "Shift A Ticket: HL7 ORU_R01 lab message queue stuck in pending state. Affecting patient care.",
+    "system": "HL7Router",
+    "version": "3.5",
+    "category": "Integration",
+    "severity": "High",
+    "target_resolution_id": "KA-031",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1084",
+    "description": "Reported by Nursing: AuthGuard directory synchronizer timeout on domain controller. Needs immediate IT response.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  },
+  {
+    "incident_id": "DS-1078",
+    "description": "Recurring issue: Single sign-on authentication gateway rejecting clinical credentials. Needs immediate IT response.",
+    "system": "AuthGuard",
+    "version": "2.8",
+    "category": "Authentication",
+    "severity": "High",
+    "target_resolution_id": "KA-012",
+    "is_successful": 1
+  }
+]
