@@ -1,0 +1,15 @@
+# Exclude test & dev files
+tests/
+conftest.py
+.pytest_cache/
+__pycache__/
+
+# Exclude local database (Vercel will create a fresh one)
+hospital_it.db
+
+# Exclude large dataset files (generated at runtime)
+dataset/hospital_it_incidents_recurring.csv
+dataset/hospital_it_incidents_recurring.json
+
+# Exclude git files
+.git/

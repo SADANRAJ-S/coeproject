@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "verified-resolution-assistant"
+version = "1.0.0"
+description = "Hospital IT Verified Resolution Assistant"
+requires-python = ">=3.10"
+
+[tool.vercel]
+entrypoint = "backend.main:app"
