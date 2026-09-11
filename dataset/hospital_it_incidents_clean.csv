@@ -1,101 +1,501 @@
-incident_id,description,system,version,category,severity,target_resolution_id,is_successful
-DS-1110,Print spooler service hung for pharmacy chart printer. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1086,Recurring issue: AuthGuard directory synchronizer timeout on domain controller. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1024,Reported by Nursing: Lab database queries timing out for pathology lookup. Please resolve immediately.,LabSys,5.4,Database,High,KA-022,1
-DS-1036,eMAR order confirmation buffer timeout. Please resolve immediately.,MedFlow,3.2,Application,High,KA-008,1
-DS-1055,PACS CT scan DICOM image frame drop during viewing. Please resolve immediately.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1020,STAT: Lab result screen blank on legacy workstation running LabSys 5.1. Workstation reboot did not fix.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1064,Reported by Nursing: PACS DICOM streaming gateway daemon frozen. Needs immediate IT response.,PACSView,4.1,Integration,High,KA-021,1
-DS-1001,Outpatient clinic lab result module unresponsive. Workstation reboot did not fix.,LabSys,5.4,Application,High,KA-014,1
-DS-1095,Recurring issue: HL7 ORU_R01 lab message queue stuck in pending state.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1074,Reported by Nursing: Patient registration screen freezing during intake.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1100,Recurring issue: Print spooler service hung for pharmacy chart printer. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1071,Clinical Alert: Patient admission intake screen non-responsive. Please resolve immediately.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1033,Reported by Nursing: LabSys database query threshold exceeded 15 seconds.,LabSys,5.4,Database,High,KA-022,1
-DS-1028,Shift A Ticket: Database connection timeout on LabSys clinical database server. Please resolve immediately.,LabSys,5.4,Database,High,KA-022,1
-DS-1026,Shift A Ticket: LabSys SQL query thread pool deadlock.,LabSys,5.4,Database,High,KA-022,1
-DS-1035,Urgent: eMAR order confirmation buffer timeout. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1
-DS-1102,Reported by Nursing: Nursing station lab label printer spooler error. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1029,STAT: Database connection timeout on LabSys clinical database server. Needs immediate IT response.,LabSys,5.4,Database,High,KA-022,1
-DS-1070,Patient demographics entry screen locked up. Needs immediate IT response.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1018,Urgent: Lab result screen blank on legacy workstation running LabSys 5.1. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1013,Clinical Alert: Lab result screen blank on legacy workstation running LabSys 5.1. Needs immediate IT response.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1107,Reported by Nursing: Nursing station lab label printer spooler error. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1021,Recurring issue: Legacy station lab result cache overflow in version 5.1. Workstation reboot did not fix.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1019,Reported by Nursing: Legacy LabSys 5.1 client local cache corrupted. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1072,STAT: Patient registration screen freezing during intake. Needs immediate IT response.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1007,Recurring issue: Lab result viewer blank for hematology orders.,LabSys,5.4,Application,High,KA-014,1
-DS-1034,STAT: Medication module timeout during order entry on floor 3. Workstation reboot did not fix.,MedFlow,3.2,Application,High,KA-008,1
-DS-1097,STAT: Interface gateway message pipeline halted for lab integration. Needs immediate IT response.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1015,Clinical Alert: LabSys 5.1 client terminal displays cache read error. Workstation reboot did not fix.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1044,Clinical Alert: eMAR electronic medication administration record order submission frozen. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1
-DS-1005,Clinical Alert: Lab result viewer displays infinite loading spinner on floor 3. Workstation reboot did not fix.,LabSys,5.4,Application,High,KA-014,1
-DS-1082,STAT: Single sign-on authentication gateway rejecting clinical credentials.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1017,Recurring issue: LabSys 5.1 client terminal displays cache read error. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1046,Recurring issue: PACS image loading slow in ER radiology station. Affecting patient care.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1062,Clinical Alert: PACSView image ingress router socket error. Needs immediate IT response.,PACSView,4.1,Integration,High,KA-021,1
-DS-1066,Reported by Nursing: PACSView image ingress router socket error. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1
-DS-1052,Urgent: PACSView image streaming latency high in trauma bay. Workstation reboot did not fix.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1023,Recurring issue: LabSys DB connection pool exhausted during peak shift change. Needs immediate IT response.,LabSys,5.4,Database,High,KA-022,1
-DS-1002,Reported by Nursing: Lab results not updating after analyzer completion. Please resolve immediately.,LabSys,5.4,Application,High,KA-014,1
-DS-1099,Recurring issue: Interface message queue delayed HL7 lab feed. Affecting patient care.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1038,Clinical Alert: MedFlow order entry screen freeze during STAT dose entry.,MedFlow,3.2,Application,High,KA-008,1
-DS-1031,Urgent: Database connection timeout on LabSys clinical database server. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1
-DS-1054,Urgent: PACSView image streaming latency high in trauma bay. Workstation reboot did not fix.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1004,Clinical Alert: Lab result viewer displays infinite loading spinner on floor 3.,LabSys,5.4,Application,High,KA-014,1
-DS-1089,Urgent: Interface message queue delayed HL7 lab feed.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1060,Shift A Ticket: PACS DICOM streaming gateway daemon frozen.,PACSView,4.1,Integration,High,KA-021,1
-DS-1073,Urgent: EHR Core patient chart registration session freeze.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1083,Recurring issue: Clinical SSO tap card login failing across nursing stations. Affecting patient care.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1016,LabSys 5.1 client terminal displays cache read error. Workstation reboot did not fix.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1087,Urgent: Clinical application login failure SSO auth error. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1043,Shift A Ticket: Pharmacy order queue listener hanging on unit dose validation.,MedFlow,3.2,Application,High,KA-008,1
-DS-1077,Urgent: EHR registration module UI thread deadlock.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1101,Recurring issue: Printer unavailable in 4th floor nursing station. Needs immediate IT response.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1063,PACSView DICOM router port unresponsive for MRI transfer. Needs immediate IT response.,PACSView,4.1,Integration,High,KA-021,1
-DS-1058,PACS DICOM gateway connection failed for radiology scanner. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1
-DS-1032,Urgent: LabSys database query threshold exceeded 15 seconds. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1
-DS-1056,STAT: PACS DICOM streaming gateway daemon frozen. Please resolve immediately.,PACSView,4.1,Integration,High,KA-021,1
-DS-1109,Reported by Nursing: Printer unavailable in 4th floor nursing station. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1081,Shift A Ticket: Single sign-on authentication gateway rejecting clinical credentials.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1078,STAT: AuthGuard LDAP single sign-on synchronization delay. Please resolve immediately.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1059,Urgent: PACSView image ingress router socket error. Workstation reboot did not fix.,PACSView,4.1,Integration,High,KA-021,1
-DS-1051,PACS image loading slow in ER radiology station. Needs immediate IT response.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1105,Clinical Alert: Patient wristband thermal printer offline in triage. Please resolve immediately.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1053,Clinical Alert: Radiology PACS workstation image rendering delayed. Workstation reboot did not fix.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1079,Shift A Ticket: AuthGuard directory synchronizer timeout on domain controller. Affecting patient care.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1012,STAT: LabSys 5.1 client terminal displays cache read error. Needs immediate IT response.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1009,Shift A Ticket: Lab results not updating after analyzer completion.,LabSys,5.4,Application,High,KA-014,1
-DS-1041,Shift A Ticket: eMAR order confirmation buffer timeout. Needs immediate IT response.,MedFlow,3.2,Application,High,KA-008,1
-DS-1050,Urgent: CT scan images buffering slowly on PACSView radiology workstation. Please resolve immediately.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1048,Shift A Ticket: PACS image loading slow in ER radiology station.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1010,Shift A Ticket: Lab result viewer blank for hematology orders. Please resolve immediately.,LabSys,5.4,Application,High,KA-014,1
-DS-1080,STAT: AuthGuard directory synchronizer timeout on domain controller. Please resolve immediately.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1030,Urgent: Database connection timeout on LabSys clinical database server. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1
-DS-1069,STAT: EHR registration module UI thread deadlock. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1027,Reported by Nursing: Database connection timeout on LabSys clinical database server.,LabSys,5.4,Database,High,KA-022,1
-DS-1040,Recurring issue: eMAR electronic medication administration record order submission frozen. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1
-DS-1049,Shift A Ticket: PACS CT scan DICOM image frame drop during viewing.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1098,Shift A Ticket: Interface gateway message pipeline halted for lab integration.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1061,Clinical Alert: PACSView image ingress router socket error. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1
-DS-1037,MedFlow order entry screen freeze during STAT dose entry. Needs immediate IT response.,MedFlow,3.2,Application,High,KA-008,1
-DS-1091,Reported by Nursing: Interface message queue delayed HL7 lab feed. Workstation reboot did not fix.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1008,Clinical Alert: LabSys viewer timeout when opening chemistry panel.,LabSys,5.4,Application,High,KA-014,1
-DS-1039,Clinical Alert: MedFlow order entry screen freeze during STAT dose entry. Workstation reboot did not fix.,MedFlow,3.2,Application,High,KA-008,1
-DS-1085,Clinical Alert: Clinical application login failure SSO auth error. Needs immediate IT response.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1106,Recurring issue: Nursing station lab label printer spooler error. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1
-DS-1076,Patient admission intake screen non-responsive. Needs immediate IT response.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1075,Recurring issue: Patient registration screen freezing during intake. Please resolve immediately.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1088,Reported by Nursing: Single sign-on authentication gateway rejecting clinical credentials. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1022,STAT: Legacy station lab result cache overflow in version 5.1. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1
-DS-1025,Urgent: LabSys database query threshold exceeded 15 seconds. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1
-DS-1096,Urgent: Interface message queue delayed HL7 lab feed. Needs immediate IT response.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1047,STAT: CT scan images buffering slowly on PACSView radiology workstation. Workstation reboot did not fix.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1057,Clinical Alert: PACS DICOM streaming gateway daemon frozen. Needs immediate IT response.,PACSView,4.1,Integration,High,KA-021,1
-DS-1065,PACSView DICOM router port unresponsive for MRI transfer. Workstation reboot did not fix.,PACSView,4.1,Integration,High,KA-021,1
-DS-1084,Recurring issue: AuthGuard directory synchronizer timeout on domain controller. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1
-DS-1045,Clinical Alert: Radiology PACS workstation image rendering delayed. Please resolve immediately.,PACSView,4.1,Performance,Medium,KA-019,1
-DS-1068,Patient admission intake screen non-responsive. Please resolve immediately.,EHRCore,6.0,UI/Application,Medium,KA-005,1
-DS-1094,Shift A Ticket: HL7 interface queue resend required for laboratory feed. Needs immediate IT response.,HL7Router,3.5,Integration,High,KA-031,1
-DS-1011,"Clinical Alert: LabSys web application service pool exhausted, results not displaying. Workstation reboot did not fix.",LabSys,5.4,Application,High,KA-014,1
-DS-1104,Clinical Alert: Printer unavailable in 4th floor nursing station.,PrintManager,1.4,Infrastructure,Low,KA-002,1
+incident_id,description,system,version,category,severity,target_resolution_id,is_successful,dataset_label
+DS-1287,Radiology team: DICOM gateway service crash on PACSView — CT images not received from scanner. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1345,STAT: EHR registration module UI thread deadlock. Please resolve immediately.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1054,Radiology team: LabSys 5.1 client terminal displays cache read error. Ongoing since 06:00.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1455,Shift A Ticket: Interface gateway message pipeline halted for lab integration. Recurring for third time this week.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1444,Shift A Ticket: Lab HL7 ORU results not flowing to EHR — router queue frozen. Please resolve immediately.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1047,Critical: Hematology analyzer results not flowing into LabSys viewer. Second report from same ward.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1184,Ward 3 reporting: Nursing eMAR administration task queue frozen during morning drug round. Recurring for third time this week.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1308,Recurring issue: Patient demographics entry screen locked up. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1257,Escalated: Radiology modality worklist DICOM query failing — gateway offline.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1020,ED Nursing: Lab result viewer displays infinite loading spinner on floor 3.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1483,IT Help Desk: Printer unavailable in 4th floor nursing station. Needs immediate IT response.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1422,Morning handover: HL7Router 3.5 message queue overflowing — 8000 messages pending. On-call engineer notified.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1236,Reported by Nursing: CT scan images buffering slowly on PACSView radiology workstation. Issue persisting for 2 hours.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1290,IT Help Desk: MRI scanner DICOM push rejected by PACSView gateway service. Ongoing since 06:00.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1179,Radiology team: eMAR order confirmation buffer timeout. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1490,IT Help Desk: Patient wristband thermal printer offline in triage. Needs immediate IT response.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1169,Ward 3 reporting: MedFlow order entry screen freeze during STAT dose entry. Workstation reboot did not fix.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1250,IT Help Desk: PACS radiologist workstation image cache full — cannot load new series. First reported at shift change.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1114,Night shift report: Lab database queries timing out for pathology lookup. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1202,Escalated: MedFlow dispensing cabinet sync queue timeout for floor 4 pharmacy. On-call engineer notified.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1367,STAT: Single sign-on authentication gateway rejecting clinical credentials. No recent system changes.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1336,Clinical Alert: EHR registration module UI thread deadlock. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1423,Night shift report: Lab HL7 ORU results not flowing to EHR — router queue frozen. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1002,ED Nursing: Outpatient clinic lab result module unresponsive.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1125,Night shift report: LabSys DB read replica lagging 10 minutes — stale results displayed. Affecting multiple users.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1352,Escalated: Patient admission intake screen non-responsive. Intermittent since yesterday.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1497,Urgent: Print spooler service hung for pharmacy chart printer. No recent system changes.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1183,Radiology team: eMAR order confirmation buffer timeout. Workstation reboot did not fix.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1195,Radiology team: MedFlow dispensing cabinet sync queue timeout for floor 4 pharmacy. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1052,Radiology team: LabSys 5.1 client station freeze during result lookup. Issue persisting for 2 hours.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1021,STAT: Lab order results queue stuck and not refreshing in LabSys 5.4. Affecting multiple users.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1120,Clinical Alert: LabSys database query threshold exceeded 15 seconds. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1393,Night shift report: Single sign-on authentication gateway rejecting clinical credentials. Needs immediate IT response.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1058,Clinical Alert: LabSys 5.1 client cache size limit reached on shared workstation. Please resolve immediately.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1078,Ward 3 reporting: LabSys 5.1 client terminal displays cache read error. Affecting multiple users.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1001,"Recurring issue: LabSys web application service pool exhausted, results not displaying. No recent system changes.",LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1244,Critical: PACSView image loading over 90 seconds for chest X-ray in ED. Issue persisting for 2 hours.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1337,Reported by Nursing: Patient admit screen hangs after entering insurance details in EHR. Intermittent since yesterday.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1430,Morning handover: HL7Router 3.5 message queue overflowing — 8000 messages pending. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1313,ED Nursing: Patient admission intake screen non-responsive. All staff affected.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1102,Radiology team: LabSys version 5.1 caching issue causing incorrect historic results. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1277,Radiology modality worklist DICOM query failing — gateway offline. Workstation reboot did not fix.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1492,IT Help Desk: Printer unavailable in 4th floor nursing station. All staff affected.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1392,Ward 3 reporting: AuthGuard LDAP single sign-on synchronization delay. Recurring for third time this week.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1489,IT Help Desk: Printer unavailable in 4th floor nursing station. No recent system changes.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1469,Shift A Ticket: Nursing station lab label printer spooler error.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1220,Shift A Ticket: MRI series DICOM image loading lag of 3 minutes on PACSView 4.1. Issue persisting for 2 hours.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1043,"Shift A Ticket: LabSys web application service pool exhausted, results not displaying. Ongoing since 06:00.",LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1004,Critical: Lab result summary screen times out after 30 seconds on ward 7. Workstation reboot did not fix.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1076,Shift A Ticket: LabSys version 5.1 caching issue causing incorrect historic results. Recurring for third time this week.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1080,Ward 3 reporting: Legacy LabSys 5.1 workstation shows stale cached results. Workstation reboot did not fix.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1324,Clinical Alert: Patient admission intake screen non-responsive. Please resolve immediately.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1323,Night shift report: EHR registration module UI thread deadlock. First reported at shift change.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1491,Night shift report: Patient wristband thermal printer offline in triage. Please resolve immediately.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1505,Pharmacy calling: Lab specimen barcode label printer not responding on floor 6. Second report from same ward.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1139,Pharmacy calling: LabSys database service ORA-00020 maximum processes error at peak. Affecting multiple users.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1428,Shift A Ticket: HL7 interface queue resend required for laboratory feed. Affecting multiple users.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1260,Critical: DICOM gateway service crash on PACSView — CT images not received from scanner. First reported at shift change.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1171,Urgent: eMAR electronic medication administration record order submission frozen. Second report from same ward.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1060,STAT: LabSys 5.1 client station freeze during result lookup. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1418,Night shift report: HL7 ORU_R01 lab message queue stuck in pending state. Intermittent since yesterday.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1466,IT Help Desk: Patient wristband thermal printer offline in triage. Needs immediate IT response.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1276,IT Help Desk: PACS ingress gateway daemon stopped — radiology image transfer halted. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1267,Night shift report: DICOM gateway service crash on PACSView — CT images not received from scanner. Intermittent since yesterday.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1227,Escalated: PACS radiologist workstation image cache full — cannot load new series. Affecting multiple users.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1206,Shift A Ticket: Radiology overnight batch image cache not cleared — morning sessions slow. Recurring for third time this week.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1198,ED Nursing: Medication module timeout during order entry on floor 3. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1057,Night shift report: LabSys 5.1 client terminal displays cache read error. Affecting multiple users.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1075,LabSys version 5.1 caching issue causing incorrect historic results. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1383,Night shift report: AuthGuard LDAP single sign-on synchronization delay. First reported at shift change.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1425,Night shift report: Outbound HL7 message queue backlog for radiology report distribution. Affecting patient care.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1251,ED Nursing: Radiology PACS workstation image rendering delayed. Intermittent since yesterday.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1372,Ward 3 reporting: AuthGuard directory synchronizer timeout on domain controller. First reported at shift change.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1209,Escalated: PACSView DICOM image cache bloated causing slow rendering on reading station. Recurring for third time this week.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1426,Reported by Nursing: HL7Router 3.5 message queue overflowing — 8000 messages pending. All staff affected.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1279,Escalated: PACSView DICOM listener port 104 not accepting new connections. First reported at shift change.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1193,Shift A Ticket: MedFlow order entry screen freeze during STAT dose entry. Second report from same ward.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1237,Morning handover: PACS radiology workstation DICOM cache overflow. Second report from same ward.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1476,Critical: Patient discharge summary printer offline in ward 3. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1320,Ward 3 reporting: EHR Core chart open operation timing out for ED rapid registration. On-call engineer notified.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1100,Clinical Alert: Legacy LabSys 5.1 workstation shows stale cached results. All staff affected.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1275,Ward 3 reporting: PACSView image ingress router socket error. Recurring for third time this week.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1487,Urgent: Thermal wristband printer driver error — print spooler crashed. Ongoing since 06:00.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1375,Escalated: Clinical SSO tap card login failing across nursing stations. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1097,Reported by Nursing: LabSys 5.1 client terminal displays cache read error. No recent system changes.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1429,Shift A Ticket: HL7 ORU_R01 lab message queue stuck in pending state. Second report from same ward.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1140,Urgent: Database connection timeout on LabSys clinical database server. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1119,Radiology team: LabSys database service ORA-00020 maximum processes error at peak. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1449,Pharmacy calling: HL7 ORM order message stuck in pending — lab not receiving orders. Needs immediate IT response.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1092,Morning handover: LabSys 5.1 client station freeze during result lookup. Affecting patient care.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1230,Ward 3 reporting: MRI series DICOM image loading lag of 3 minutes on PACSView 4.1. Affecting multiple users.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1201,Morning handover: MedFlow dispensing cabinet sync queue timeout for floor 4 pharmacy. All staff affected.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1370,Radiology team: AuthGuard SSO session token expiry too aggressive — re-login every 5 min. All staff affected.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1174,Medication dispensing order queue delayed in pharmacy module. No recent system changes.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1032,Night shift report: LabSys result panel frozen after updating from 5.3 to 5.4. Issue persisting for 2 hours.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1419,Recurring issue: HL7 ORU_R01 lab message queue stuck in pending state.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1390,Reported by Nursing: Hospital SSO badge tap login failing for all staff in ward 5. Needs immediate IT response.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1510,Recurring issue: Lab specimen barcode label printer not responding on floor 6. All staff affected.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1374,STAT: Single sign-on authentication gateway rejecting clinical credentials. No recent system changes.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1412,Clinical Alert: HL7 interface queue resend required for laboratory feed. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1340,Night shift report: Patient registration workflow frozen at insurance verification step. Ongoing since 06:00.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1317,Critical: Patient registration workflow frozen at insurance verification step. First reported at shift change.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1212,Pharmacy calling: PACS radiology workstation DICOM cache overflow. All staff affected.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1297,Reported by Nursing: PACSView DICOM listener port 104 not accepting new connections. Ongoing since 06:00.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1509,ED Nursing: Patient wristband thermal printer offline in triage. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1046,Pharmacy calling: Lab order results queue stuck and not refreshing in LabSys 5.4.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1415,STAT: HL7Router queue processing stopped — critical lab values not delivered. Affecting multiple users.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1305,Critical: PACSView image ingress router socket error. Affecting multiple users.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1069,Critical: LabSys 5.1 client cache size limit reached on shared workstation. Issue persisting for 2 hours.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1420,Pharmacy calling: Interface gateway message pipeline halted for lab integration. Issue persisting for 2 hours.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1023,Night shift report: Clinical workstation cannot retrieve lab result data from LabSys 5.4. Ongoing since 06:00.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1334,IT Help Desk: Patient demographics entry screen locked up. Please resolve immediately.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1162,STAT: MedFlow order entry screen freeze during STAT dose entry. On-call engineer notified.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1148,Morning handover: LabSys database service ORA-00020 maximum processes error at peak. Recurring for third time this week.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1245,Shift A Ticket: Radiology overnight batch image cache not cleared — morning sessions slow. Needs immediate IT response.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1380,IT Help Desk: Clinical app authentication gateway returning 401 error for valid users. Affecting patient care.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1170,Radiology team: Pharmacy STAT medication orders not processing through MedFlow queue. Issue persisting for 2 hours.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1203,Radiology team: Pharmacy barcode scan medication administration blocked in queue. Issue persisting for 2 hours.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1027,STAT: Lab results failing to populate in emergency department workstation. On-call engineer notified.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1302,Critical: PACSView DICOM listener port 104 not accepting new connections. Please resolve immediately.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1465,Critical: PrintManager 1.4 spooler queue stuck with 50 pending jobs. On-call engineer notified.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1249,Recurring issue: PACSView DICOM image cache bloated causing slow rendering on reading station. Affecting patient care.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1008,Critical: HL7 result queue listener frozen in LabSys application server. Needs immediate IT response.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1192,Urgent: MedFlow medication administration queue backed up 200+ pending orders. Needs immediate IT response.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1176,Recurring issue: Medication module timeout during order entry on floor 3. Issue persisting for 2 hours.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1109,Critical: LabSys database service ORA-00020 maximum processes error at peak. No recent system changes.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1112,Recurring issue: LabSys DB pool starvation during morning peak — queries not completing. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1413,Ward 3 reporting: HL7 ORU_R01 lab message queue stuck in pending state. Issue persisting for 2 hours.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1362,Shift A Ticket: Clinical application login failure SSO auth error. Please resolve immediately.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1508,Escalated: Medication administration label printer offline in pharmacy. No recent system changes.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1106,Radiology team: Lab pathology report database connection failure during busy hours. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1402,Radiology team: AuthGuard SSO session token expiry too aggressive — re-login every 5 min. Issue persisting for 2 hours.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1307,Shift A Ticket: Patient admission intake screen non-responsive. All staff affected.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1292,ED Nursing: PACS DICOM gateway connection failed for radiology scanner. Ongoing since 06:00.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1113,IT Help Desk: LabSys SQL query thread pool deadlock. No recent system changes.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1172,Night shift report: eMAR order confirmation buffer timeout. First reported at shift change.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1049,Night shift report: Automated lab result alerts not appearing for critical values in ICU. No recent system changes.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1461,Clinical Alert: Lab specimen barcode label printer not responding on floor 6. Second report from same ward.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1009,STAT: Lab results are not loading for users in ICU. On-call engineer notified.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1273,Reported by Nursing: PACSView DICOM listener port 104 not accepting new connections. Issue persisting for 2 hours.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1381,Urgent: Hospital SSO badge tap login failing for all staff in ward 5. On-call engineer notified.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1259,Radiology team: PACSView DICOM C-STORE operation failure for ultrasound study. Recurring for third time this week.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1427,Ward 3 reporting: Outbound HL7 message queue backlog for radiology report distribution. Workstation reboot did not fix.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1044,Reported by Nursing: Lab results are not loading for users in ICU. No recent system changes.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1123,IT Help Desk: LabSys 5.4 database pool exhausted — all 200 connections in use. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1235,Clinical Alert: PACSView viewer thumbnail loading 60 seconds — radiology throughput impacted. On-call engineer notified.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1436,ED Nursing: Outbound HL7 message queue backlog for radiology report distribution. All staff affected.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1224,Pharmacy calling: PACSView DICOM image cache bloated causing slow rendering on reading station.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1234,Morning handover: MRI series DICOM image loading lag of 3 minutes on PACSView 4.1. Needs immediate IT response.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1007,Pharmacy calling: Lab result viewer blank for hematology orders. Affecting multiple users.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1385,ED Nursing: AuthGuard SSO session token expiry too aggressive — re-login every 5 min. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1243,Clinical Alert: PACS radiology workstation DICOM cache overflow. First reported at shift change.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1107,Escalated: SQL connection timeout for LabSys database cluster during batch run. Affecting multiple users.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1346,Radiology team: EHR encounter creation screen not responding for new patient intake. Needs immediate IT response.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1341,ED Nursing: EHR registration module UI thread deadlock. Affecting multiple users.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1095,Clinical Alert: Legacy station lab result cache overflow in version 5.1. First reported at shift change.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1005,Reported by Nursing: Outpatient clinic lab result module unresponsive. On-call engineer notified.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1495,Shift A Ticket: Nursing station lab label printer spooler error. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1167,Morning handover: MedFlow dispensing cabinet sync queue timeout for floor 4 pharmacy. Issue persisting for 2 hours.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1145,Reported by Nursing: LabSys SQL query thread pool deadlock. All staff affected.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1319,EHR encounter creation screen not responding for new patient intake.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1443,Shift A Ticket: HL7Router 3.5 message queue overflowing — 8000 messages pending. First reported at shift change.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1442,Urgent: HL7 ORU_R01 lab message queue stuck in pending state. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1207,Escalated: CT scan images buffering slowly on PACSView radiology workstation. No recent system changes.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1194,Pharmacy calling: MedFlow order entry screen freeze during STAT dose entry. Second report from same ward.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1504,ED Nursing: PrintManager 1.4 spooler queue stuck with 50 pending jobs. Second report from same ward.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1077,Recurring issue: Outpatient terminal on version 5.1 showing blank result panel.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1158,Critical: Medication module timeout during order entry on floor 3. Workstation reboot did not fix.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1281,Radiology team: PACSView image ingress router socket error.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1311,Night shift report: EHR Core patient chart registration session freeze.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1322,Pharmacy calling: EHRCore 6.0 UI freezes when selecting patient from search results list. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1200,Shift A Ticket: eMAR electronic medication administration record order submission frozen. Issue persisting for 2 hours.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1084,Clinical Alert: Legacy station lab result cache overflow in version 5.1. No recent system changes.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1182,Recurring issue: eMAR electronic medication administration record order submission frozen. Affecting multiple users.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1132,Morning handover: LabSys SQL query thread pool deadlock. Needs immediate IT response.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1460,Shift A Ticket: Thermal wristband printer driver error — print spooler crashed. Recurring for third time this week.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1482,Morning handover: Nursing station lab label printer spooler error. On-call engineer notified.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1117,ED Nursing: LabSys SQL query thread pool deadlock. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1133,Recurring issue: LabSys DB pool starvation during morning peak — queries not completing. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1386,Ward 3 reporting: AuthGuard LDAP single sign-on synchronization delay.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1498,Urgent: Print spooler service hung for pharmacy chart printer. Affecting multiple users.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1036,Night shift report: Lab order results queue stuck and not refreshing in LabSys 5.4. Affecting patient care.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1010,Escalated: Clinical workstation cannot retrieve lab result data from LabSys 5.4. Recurring for third time this week.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1218,Radiology team: PACSView viewer thumbnail loading 60 seconds — radiology throughput impacted. Intermittent since yesterday.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1011,Escalated: STAT blood work lab results hanging on render screen. Affecting multiple users.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1439,Radiology team: HL7Router 3.5 message queue overflowing — 8000 messages pending. Needs immediate IT response.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1410,Pharmacy calling: HL7 ADT message pipeline delayed — patient admit not triggering worklists.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1131,Morning handover: LabSys DB read replica lagging 10 minutes — stale results displayed. Affecting patient care.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1300,Pharmacy calling: PACSView DICOM router port unresponsive for MRI transfer. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1051,Pharmacy calling: Hematology analyzer results not flowing into LabSys viewer. Second report from same ward.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1037,"Morning handover: LabSys web application service pool exhausted, results not displaying. Needs immediate IT response.",LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1499,Ward 3 reporting: Patient discharge summary printer offline in ward 3. Recurring for third time this week.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1438,Recurring issue: HL7 interface queue resend required for laboratory feed. Needs immediate IT response.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1394,Recurring issue: AuthGuard 2.8 LDAP sync delay causing 5-minute login wait at nursing station. Affecting patient care.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1433,Ward 3 reporting: HL7 interface engine crashed — all downstream feeds halted. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1376,Reported by Nursing: AuthGuard 2.8 LDAP sync delay causing 5-minute login wait at nursing station.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1025,ED Nursing: HL7 result queue listener frozen in LabSys application server. Affecting multiple users.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1033,Pharmacy calling: Automated lab result alerts not appearing for critical values in ICU. Ongoing since 06:00.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1306,PACS DICOM gateway connection failed for radiology scanner. Workstation reboot did not fix.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1503,Escalated: PrintManager 1.4 spooler queue stuck with 50 pending jobs. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1286,Urgent: PACS DICOM gateway connection failed for radiology scanner.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1160,Pharmacy calling: Pharmacy barcode scan medication administration blocked in queue. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1387,Recurring issue: AuthGuard 2.8 LDAP sync delay causing 5-minute login wait at nursing station. No recent system changes.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1424,Urgent: HL7Router queue processing stopped — critical lab values not delivered. No recent system changes.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1221,Shift A Ticket: PACS image loading slow in ER radiology station. All staff affected.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1338,IT Help Desk: EHRCore 6.0 UI freezes when selecting patient from search results list. No recent system changes.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1247,Radiology PACS workstation image rendering delayed. Second report from same ward.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1099,ED Nursing: LabSys 5.1 client cache size limit reached on shared workstation. Ongoing since 06:00.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1019,STAT: LabSys result panel frozen after updating from 5.3 to 5.4. Workstation reboot did not fix.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1271,Escalated: PACS DICOM gateway connection failed for radiology scanner. Second report from same ward.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1142,Ward 3 reporting: LabSys DB connection pool exhausted during peak shift change. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1093,Old ward terminal running LabSys 5.1 displays corrupted result rows. Second report from same ward.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1268,Recurring issue: Radiology modality worklist DICOM query failing — gateway offline. Needs immediate IT response.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1144,Morning handover: Database connection timeout on LabSys clinical database server. Affecting patient care.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1335,Radiology team: EHR encounter creation screen not responding for new patient intake. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1475,ED Nursing: Print queue deadlock in PrintManager — nurses cannot print MAR sheet. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1388,Pharmacy calling: LDAP connection pool saturation in AuthGuard — login intermittent. Recurring for third time this week.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1012,Ward 3 reporting: Lab order results queue stuck and not refreshing in LabSys 5.4. Ongoing since 06:00.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1452,Pharmacy calling: Outbound HL7 message queue backlog for radiology report distribution. Issue persisting for 2 hours.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1104,Shift A Ticket: LabSys database service ORA-00020 maximum processes error at peak. On-call engineer notified.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1196,Critical: Medication module timeout during order entry on floor 3. Intermittent since yesterday.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1408,Urgent: Single sign-on authentication gateway rejecting clinical credentials. Affecting multiple users.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1478,Pharmacy calling: Lab specimen barcode label printer not responding on floor 6. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1068,ED Nursing: LabSys version 5.1 caching issue causing incorrect historic results. All staff affected.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1463,PrintManager 1.4 spooler queue stuck with 50 pending jobs. On-call engineer notified.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1111,Radiology team: LabSys database query threshold exceeded 15 seconds. Recurring for third time this week.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1028,Recurring issue: LabSys application service crash detected during shift change. First reported at shift change.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1217,Urgent: PACSView image loading over 90 seconds for chest X-ray in ED. Affecting multiple users.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1003,Night shift report: Outpatient clinic lab result module unresponsive. No recent system changes.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1138,Morning handover: LabSys database query threshold exceeded 15 seconds. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1285,ED Nursing: DICOM gateway service crash on PACSView — CT images not received from scanner. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1462,Pharmacy calling: Print spooler service hung for pharmacy chart printer. Second report from same ward.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1325,Night shift report: Patient demographics entry screen locked up. On-call engineer notified.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1447,Critical: HL7Router 3.5 message queue overflowing — 8000 messages pending. Issue persisting for 2 hours.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1216,Ward 3 reporting: PACSView image streaming latency high in trauma bay. Needs immediate IT response.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1254,Reported by Nursing: PACS radiologist workstation image cache full — cannot load new series. Needs immediate IT response.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1501,STAT: Printer unavailable in 4th floor nursing station. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1371,Morning handover: AuthGuard SSO session token expiry too aggressive — re-login every 5 min.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1269,IT Help Desk: PACS DICOM gateway connection failed for radiology scanner. All staff affected.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1241,ED Nursing: PACSView image streaming latency high in trauma bay. First reported at shift change.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1013,Night shift report: Hematology analyzer results not flowing into LabSys viewer.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1091,Reported by Nursing: Old ward terminal running LabSys 5.1 displays corrupted result rows. No recent system changes.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1150,Urgent: LabSys 5.4 database pool exhausted — all 200 connections in use. First reported at shift change.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1056,Morning handover: Legacy LabSys 5.1 client local cache corrupted. Needs immediate IT response.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1062,Pharmacy calling: LabSys 5.1 client cache size limit reached on shared workstation. On-call engineer notified.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1118,Critical: Lab pathology report database connection failure during busy hours. Intermittent since yesterday.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1130,Radiology team: LabSys SQL query thread pool deadlock. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1332,Reported by Nursing: Patient admit screen hangs after entering insurance details in EHR. Affecting multiple users.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1242,Recurring issue: MRI series DICOM image loading lag of 3 minutes on PACSView 4.1. Please resolve immediately.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1316,Reported by Nursing: EHRCore admissions screen freeze during multi-patient batch registration. Issue persisting for 2 hours.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1006,Radiology team: Lab result viewer displays infinite loading spinner on floor 3. Needs immediate IT response.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1303,STAT: PACSView DICOM C-STORE operation failure for ultrasound study. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1318,Morning handover: Patient registration screen freezing during intake. Issue persisting for 2 hours.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1456,Urgent: HL7 interface queue resend required for laboratory feed. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1477,Urgent: Patient wristband thermal printer offline in triage. Needs immediate IT response.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1379,Critical: Clinical workstation smart card login rejected by AuthGuard gateway. All staff affected.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1432,Clinical Alert: HL7Router queue processing stopped — critical lab values not delivered. Workstation reboot did not fix.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1262,Escalated: PACSView image ingress router socket error. Ongoing since 06:00.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1098,Urgent: Old ward terminal running LabSys 5.1 displays corrupted result rows. Affecting multiple users.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1382,Pharmacy calling: Clinical application login failure SSO auth error. Second report from same ward.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1506,Night shift report: Lab specimen barcode label printer not responding on floor 6. Please resolve immediately.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1473,Patient wristband thermal printer offline in triage. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1437,HL7Router 3.5 message queue overflowing — 8000 messages pending. Affecting multiple users.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1215,STAT: PACS CT scan DICOM image frame drop during viewing. Intermittent since yesterday.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1457,IT Help Desk: HL7 ADT message pipeline delayed — patient admit not triggering worklists. All staff affected.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1351,Escalated: EHR encounter creation screen not responding for new patient intake.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1026,Morning handover: LabSys application service crash detected during shift change. All staff affected.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1050,ED Nursing: Automated lab result alerts not appearing for critical values in ICU. Recurring for third time this week.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1073,Pharmacy calling: LabSys 5.1 client station freeze during result lookup. Second report from same ward.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1127,Escalated: Lab database queries timing out for pathology lookup. Needs immediate IT response.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1395,Reported by Nursing: Clinical app authentication gateway returning 401 error for valid users. All staff affected.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1137,Reported by Nursing: LabSys database service ORA-00020 maximum processes error at peak. Recurring for third time this week.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1389,IT Help Desk: Clinical workstation smart card login rejected by AuthGuard gateway. Affecting patient care.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1358,Pharmacy calling: Hospital SSO badge tap login failing for all staff in ward 5. Affecting multiple users.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1124,IT Help Desk: Lab pathology report database connection failure during busy hours. On-call engineer notified.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1330,Critical: EHR Core chart open operation timing out for ED rapid registration. On-call engineer notified.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1055,Escalated: Legacy station lab result cache overflow in version 5.1. Issue persisting for 2 hours.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1264,Morning handover: PACS DICOM streaming gateway daemon frozen. No recent system changes.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1450,Critical: HL7 interface engine crashed — all downstream feeds halted. Workstation reboot did not fix.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1357,STAT: EHRCore 6.0 UI freezes when selecting patient from search results list. On-call engineer notified.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1205,Ward 3 reporting: PACS radiology workstation DICOM cache overflow. Needs immediate IT response.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1355,Ward 3 reporting: Patient admission intake screen non-responsive. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1407,Morning handover: AuthGuard LDAP directory sync lagging 20 minutes — new password not recognized. No recent system changes.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1440,Shift A Ticket: Interface gateway message pipeline halted for lab integration. Please resolve immediately.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1471,Radiology team: Nursing station lab label printer spooler error. Issue persisting for 2 hours.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1175,Escalated: Nursing eMAR administration task queue frozen during morning drug round. First reported at shift change.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1105,Escalated: Database connection timeout on LabSys clinical database server. First reported at shift change.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1238,Urgent: PACS image loading slow in ER radiology station. Affecting multiple users.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1299,Escalated: Radiology modality worklist DICOM query failing — gateway offline. Needs immediate IT response.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1213,IT Help Desk: PACS radiologist workstation image cache full — cannot load new series. Affecting multiple users.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1226,Shift A Ticket: MRI series DICOM image loading lag of 3 minutes on PACSView 4.1. Affecting patient care.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1398,Shift A Ticket: AuthGuard SSO session token expiry too aggressive — re-login every 5 min. Needs immediate IT response.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1031,STAT: HL7 result queue listener frozen in LabSys application server. On-call engineer notified.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1360,Night shift report: Clinical workstation smart card login rejected by AuthGuard gateway. No recent system changes.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1233,Critical: CT scan images buffering slowly on PACSView radiology workstation. Ongoing since 06:00.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1153,Clinical Alert: Database latency above 30 seconds for LabSys result retrieval. Please resolve immediately.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1479,Radiology team: Patient wristband thermal printer offline in triage. First reported at shift change.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1126,Pharmacy calling: LabSys DB read replica lagging 10 minutes — stale results displayed. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1248,Morning handover: PACS radiologist workstation image cache full — cannot load new series. Ongoing since 06:00.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1155,Recurring issue: eMAR electronic medication administration record order submission frozen.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1400,Recurring issue: AuthGuard directory synchronizer timeout on domain controller. First reported at shift change.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1280,IT Help Desk: Radiology modality worklist DICOM query failing — gateway offline. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1255,IT Help Desk: PACSView image loading over 90 seconds for chest X-ray in ED. First reported at shift change.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1472,Print queue deadlock in PrintManager — nurses cannot print MAR sheet. Second report from same ward.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1214,Ward 3 reporting: PACSView DICOM image cache bloated causing slow rendering on reading station. Issue persisting for 2 hours.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1293,Radiology team: PACSView DICOM router port unresponsive for MRI transfer. First reported at shift change.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1108,Clinical Alert: LabSys SQL query thread pool deadlock. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1136,Shift A Ticket: Lab database queries timing out for pathology lookup. Ongoing since 06:00.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1296,Critical: MRI scanner DICOM push rejected by PACSView gateway service. Recurring for third time this week.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1024,Morning handover: LabSys viewer timeout when opening chemistry panel. All staff affected.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1042,Radiology team: LabSys application service crash detected during shift change. On-call engineer notified.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1015,Escalated: LabSys result panel frozen after updating from 5.3 to 5.4.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1493,Recurring issue: PrintManager 1.4 spooler queue stuck with 50 pending jobs. Recurring for third time this week.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1289,Shift A Ticket: PACS ingress gateway daemon stopped — radiology image transfer halted. On-call engineer notified.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1173,MedFlow order entry screen freeze during STAT dose entry. Affecting patient care.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1454,ED Nursing: HL7 interface engine crashed — all downstream feeds halted. Please resolve immediately.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1088,Reported by Nursing: Outpatient terminal on version 5.1 showing blank result panel. First reported at shift change.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1343,Urgent: EHRCore 6.0 UI freezes when selecting patient from search results list. Workstation reboot did not fix.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1298,IT Help Desk: PACSView DICOM listener port 104 not accepting new connections.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1304,STAT: PACS ingress gateway daemon stopped — radiology image transfer halted. First reported at shift change.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1087,Critical: LabSys 5.1 client station freeze during result lookup. Please resolve immediately.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1347,IT Help Desk: EHR registration module UI thread deadlock. Recurring for third time this week.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1048,Pharmacy calling: LabSys viewer timeout when opening chemistry panel. Please resolve immediately.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1274,Shift A Ticket: PACSView DICOM router port unresponsive for MRI transfer. No recent system changes.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1488,IT Help Desk: Lab specimen barcode label printer not responding on floor 6. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1484,ED Nursing: Print queue deadlock in PrintManager — nurses cannot print MAR sheet. Please resolve immediately.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1321,Reported by Nursing: EHR encounter creation screen not responding for new patient intake. Issue persisting for 2 hours.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1363,Urgent: LDAP connection pool saturation in AuthGuard — login intermittent. Ongoing since 06:00.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1486,Medication administration label printer offline in pharmacy. On-call engineer notified.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1353,Night shift report: Patient demographics entry screen locked up. Affecting multiple users.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1326,Morning handover: EHRCore admissions screen freeze during multi-patient batch registration. Issue persisting for 2 hours.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1101,Legacy LabSys 5.1 workstation shows stale cached results. Recurring for third time this week.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1129,Recurring issue: LabSys DB connection pool exhausted during peak shift change. Needs immediate IT response.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1507,Radiology team: Thermal wristband printer driver error — print spooler crashed. Affecting multiple users.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1146,Critical: SQL connection timeout for LabSys database cluster during batch run. No recent system changes.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1481,Critical: Medication administration label printer offline in pharmacy. Intermittent since yesterday.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1405,Night shift report: AuthGuard SSO session token expiry too aggressive — re-login every 5 min. Please resolve immediately.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1116,STAT: LabSys database query threshold exceeded 15 seconds. Affecting patient care.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1166,Morning handover: Pharmacy order queue daemon unresponsive in MedFlow 3.2. First reported at shift change.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1083,Urgent: LabSys 5.1 client cache size limit reached on shared workstation. Affecting multiple users.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1085,Lab result screen blank on legacy workstation running LabSys 5.1. Needs immediate IT response.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1156,Pharmacy calling: eMAR order confirmation buffer timeout. Intermittent since yesterday.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1453,Ward 3 reporting: HL7 interface queue resend required for laboratory feed. All staff affected.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1431,Ward 3 reporting: HL7 ORM order message stuck in pending — lab not receiving orders. Please resolve immediately.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1064,Ward 3 reporting: LabSys version 5.1 caching issue causing incorrect historic results. Second report from same ward.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1029,Morning handover: LabSys result panel frozen after updating from 5.3 to 5.4. On-call engineer notified.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1258,Urgent: PACSView DICOM C-STORE operation failure for ultrasound study. Second report from same ward.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1222,Night shift report: Radiology overnight batch image cache not cleared — morning sessions slow. Recurring for third time this week.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1434,Shift A Ticket: HL7Router 3.5 message queue overflowing — 8000 messages pending. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1094,Ward 3 reporting: LabSys 5.1 client terminal displays cache read error. On-call engineer notified.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1301,PACSView image ingress router socket error.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1485,IT Help Desk: Patient wristband thermal printer offline in triage. Affecting patient care.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1378,Ward 3 reporting: Clinical SSO tap card login failing across nursing stations. All staff affected.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1066,Ward 3 reporting: Old ward terminal running LabSys 5.1 displays corrupted result rows. Issue persisting for 2 hours.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1177,Pharmacy calling: Pharmacy STAT medication orders not processing through MedFlow queue. Second report from same ward.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1265,Urgent: MRI scanner DICOM push rejected by PACSView gateway service. First reported at shift change.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1349,Critical: Patient demographics entry screen locked up. No recent system changes.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1239,Morning handover: PACS image loading slow in ER radiology station. Affecting multiple users.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1451,STAT: HL7 ADT message pipeline delayed — patient admit not triggering worklists. Affecting multiple users.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1396,STAT: Clinical app authentication gateway returning 401 error for valid users. Second report from same ward.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1329,STAT: EHR encounter creation screen not responding for new patient intake. On-call engineer notified.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1163,Critical: eMAR electronic medication administration record order submission frozen. Ongoing since 06:00.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1464,Ward 3 reporting: Printer unavailable in 4th floor nursing station. All staff affected.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1414,Urgent: HL7Router queue processing stopped — critical lab values not delivered. Issue persisting for 2 hours.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1295,STAT: PACSView DICOM listener port 104 not accepting new connections. Issue persisting for 2 hours.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1210,Morning handover: PACS image loading slow in ER radiology station. Intermittent since yesterday.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1211,Radiology team: Radiology PACS workstation image rendering delayed. Recurring for third time this week.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1270,Escalated: PACS ingress gateway daemon stopped — radiology image transfer halted. Recurring for third time this week.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1246,Escalated: PACS radiologist workstation image cache full — cannot load new series. Issue persisting for 2 hours.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1369,Reported by Nursing: Hospital SSO badge tap login failing for all staff in ward 5. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1500,Radiology team: Medication administration label printer offline in pharmacy. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1441,Morning handover: HL7 ORU_R01 lab message queue stuck in pending state. Recurring for third time this week.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1159,Morning handover: MedFlow dispensing cabinet sync queue timeout for floor 4 pharmacy. Intermittent since yesterday.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1403,Pharmacy calling: LDAP connection pool saturation in AuthGuard — login intermittent. Ongoing since 06:00.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1409,Clinical Alert: HL7 interface engine crashed — all downstream feeds halted. Workstation reboot did not fix.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1421,Recurring issue: HL7 interface engine crashed — all downstream feeds halted. Affecting multiple users.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1067,IT Help Desk: Lab result screen blank on legacy workstation running LabSys 5.1. Workstation reboot did not fix.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1283,Critical: PACSView DICOM C-STORE operation failure for ultrasound study. Ongoing since 06:00.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1240,ED Nursing: PACS CT scan DICOM image frame drop during viewing. Please resolve immediately.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1189,Pharmacy calling: Pharmacy barcode scan medication administration blocked in queue. On-call engineer notified.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1445,Recurring issue: HL7 router ingress port backlogged with 5000 unparsed messages. Intermittent since yesterday.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1284,Pharmacy calling: PACSView DICOM router port unresponsive for MRI transfer. Second report from same ward.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1185,Urgent: Medication order workflow engine stuck on verifying state in MedFlow. Issue persisting for 2 hours.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1470,Radiology team: Patient discharge summary printer offline in ward 3. Intermittent since yesterday.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1253,STAT: Radiology PACS workstation image rendering delayed. On-call engineer notified.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1122,Morning handover: LabSys SQL query thread pool deadlock. Ongoing since 06:00.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1072,Ward 3 reporting: Legacy LabSys 5.1 workstation shows stale cached results. Intermittent since yesterday.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1417,Urgent: HL7 router ingress port backlogged with 5000 unparsed messages. Issue persisting for 2 hours.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1416,Radiology team: HL7Router queue processing stopped — critical lab values not delivered. All staff affected.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1115,Escalated: LabSys 5.4 database pool exhausted — all 200 connections in use. All staff affected.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1261,Critical: PACSView DICOM listener port 104 not accepting new connections. Ongoing since 06:00.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1458,Reported by Nursing: HL7 ORU_R01 lab message queue stuck in pending state. Workstation reboot did not fix.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1090,IT Help Desk: LabSys 5.1 client terminal displays cache read error. Please resolve immediately.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1480,Medication administration label printer offline in pharmacy. Ongoing since 06:00.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1359,IT Help Desk: Clinical SSO tap card login failing across nursing stations. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1404,Night shift report: LDAP connection pool saturation in AuthGuard — login intermittent. Recurring for third time this week.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1365,ED Nursing: AuthGuard SSO session token expiry too aggressive — re-login every 5 min. Issue persisting for 2 hours.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1081,Escalated: LabSys version 5.1 caching issue causing incorrect historic results. Recurring for third time this week.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1154,Recurring issue: Medication dispensing order queue delayed in pharmacy module. All staff affected.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1149,ED Nursing: LabSys 5.4 database pool exhausted — all 200 connections in use. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1278,Reported by Nursing: PACS ingress gateway daemon stopped — radiology image transfer halted. Issue persisting for 2 hours.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1282,Night shift report: PACSView DICOM C-STORE operation failure for ultrasound study. Second report from same ward.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1034,Radiology team: Lab result viewer blank for hematology orders. No recent system changes.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1364,Escalated: AuthGuard LDAP single sign-on synchronization delay. Issue persisting for 2 hours.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1178,Recurring issue: MedFlow order entry screen freeze during STAT dose entry. First reported at shift change.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1342,ED Nursing: EHR encounter creation screen not responding for new patient intake. Recurring for third time this week.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1164,Escalated: Pharmacy order queue daemon unresponsive in MedFlow 3.2. Recurring for third time this week.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1350,Patient admit screen hangs after entering insurance details in EHR. First reported at shift change.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1045,Critical: Lab result summary screen times out after 30 seconds on ward 7. Please resolve immediately.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1448,Morning handover: HL7Router queue processing stopped — critical lab values not delivered. No recent system changes.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1366,Pharmacy calling: LDAP connection pool saturation in AuthGuard — login intermittent. On-call engineer notified.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1089,Pharmacy calling: Legacy station lab result cache overflow in version 5.1. Intermittent since yesterday.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1232,Urgent: PACSView DICOM image cache bloated causing slow rendering on reading station. First reported at shift change.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1038,Shift A Ticket: Lab result viewer blank for hematology orders.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1070,Escalated: Legacy station lab result cache overflow in version 5.1. On-call engineer notified.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1063,STAT: Lab result screen blank on legacy workstation running LabSys 5.1. Recurring for third time this week.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1103,IT Help Desk: SQL connection timeout for LabSys database cluster during batch run. Ongoing since 06:00.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1252,Pharmacy calling: Radiology PACS workstation image rendering delayed. Recurring for third time this week.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1356,Patient admission intake screen non-responsive. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1147,Ward 3 reporting: Lab pathology report database connection failure during busy hours. Issue persisting for 2 hours.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1314,Clinical Alert: EHR registration module UI thread deadlock. Issue persisting for 2 hours.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1110,Ward 3 reporting: LabSys database service ORA-00020 maximum processes error at peak. Affecting multiple users.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1494,Radiology team: Thermal wristband printer driver error — print spooler crashed. Ongoing since 06:00.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1361,Clinical Alert: LDAP connection pool saturation in AuthGuard — login intermittent. Second report from same ward.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1134,Shift A Ticket: LabSys database query threshold exceeded 15 seconds. Workstation reboot did not fix.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1397,IT Help Desk: AuthGuard 2.8 LDAP sync delay causing 5-minute login wait at nursing station. Intermittent since yesterday.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1135,Urgent: LabSys database query threshold exceeded 15 seconds. All staff affected.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1061,ED Nursing: LabSys version 5.1 caching issue causing incorrect historic results. Affecting multiple users.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1288,Critical: PACSView DICOM router port unresponsive for MRI transfer. Second report from same ward.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1199,Reported by Nursing: Medication dispensing order queue delayed in pharmacy module. Issue persisting for 2 hours.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1266,Shift A Ticket: PACSView DICOM listener port 104 not accepting new connections. Affecting patient care.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1256,Morning handover: DICOM gateway service crash on PACSView — CT images not received from scanner.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1096,Reported by Nursing: Legacy station lab result cache overflow in version 5.1. Intermittent since yesterday.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1377,ED Nursing: AuthGuard LDAP directory sync lagging 20 minutes — new password not recognized. Please resolve immediately.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1014,Escalated: LabSys viewer timeout when opening chemistry panel. Please resolve immediately.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1059,Critical: LabSys 5.1 client station freeze during result lookup. On-call engineer notified.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1128,STAT: LabSys DB connection pool exhausted during peak shift change. Affecting multiple users.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1143,Urgent: LabSys DB connection pool exhausted during peak shift change. Please resolve immediately.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1333,Night shift report: Patient admit screen hangs after entering insurance details in EHR. Ongoing since 06:00.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1161,Critical: Nursing eMAR administration task queue frozen during morning drug round. Second report from same ward.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1204,Pharmacy calling: Medication dispensing order queue delayed in pharmacy module. All staff affected.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1459,Recurring issue: HL7 ORU_R01 lab message queue stuck in pending state. Workstation reboot did not fix.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1272,Morning handover: MRI scanner DICOM push rejected by PACSView gateway service. Intermittent since yesterday.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1071,Outpatient terminal on version 5.1 showing blank result panel. On-call engineer notified.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1294,Escalated: Radiology modality worklist DICOM query failing — gateway offline.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1040,Clinical Alert: Lab result notification service unresponsive — critical values not alerting. Issue persisting for 2 hours.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1391,Ward 3 reporting: Hospital SSO badge tap login failing for all staff in ward 5. All staff affected.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1496,Urgent: Thermal wristband printer driver error — print spooler crashed. Workstation reboot did not fix.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1191,Radiology team: Pharmacy order queue listener hanging on unit dose validation. Ongoing since 06:00.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1190,STAT: Medication module timeout during order entry on floor 3. All staff affected.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1231,Radiology team: MRI series DICOM image loading lag of 3 minutes on PACSView 4.1. Recurring for third time this week.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1468,Night shift report: Patient wristband thermal printer offline in triage. No recent system changes.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1079,Pharmacy calling: Legacy station lab result cache overflow in version 5.1. Affecting multiple users.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1310,IT Help Desk: Patient registration screen freezing during intake. No recent system changes.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1017,ED Nursing: Clinical workstation cannot retrieve lab result data from LabSys 5.4. First reported at shift change.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1291,ED Nursing: PACS ingress gateway daemon stopped — radiology image transfer halted. First reported at shift change.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1197,Morning handover: Pharmacy order queue daemon unresponsive in MedFlow 3.2. All staff affected.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1186,Night shift report: eMAR electronic medication administration record order submission frozen. Workstation reboot did not fix.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1188,eMAR order confirmation buffer timeout. Ongoing since 06:00.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1331,Pharmacy calling: EHRCore 6.0 registration UI thread pool exhausted — admissions delayed. On-call engineer notified.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1399,Shift A Ticket: AuthGuard LDAP single sign-on synchronization delay. Workstation reboot did not fix.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1121,Ward 3 reporting: LabSys SQL query thread pool deadlock. Intermittent since yesterday.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1035,Clinical Alert: Outpatient clinic lab result module unresponsive. Workstation reboot did not fix.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1065,Old ward terminal running LabSys 5.1 displays corrupted result rows. Recurring for third time this week.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1018,Reported by Nursing: Lab order results queue stuck and not refreshing in LabSys 5.4. On-call engineer notified.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1225,Shift A Ticket: PACSView viewer thumbnail loading 60 seconds — radiology throughput impacted. On-call engineer notified.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1401,Clinical Alert: Clinical SSO tap card login failing across nursing stations. Please resolve immediately.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1474,Shift A Ticket: Print spooler service hung for pharmacy chart printer. All staff affected.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1312,Escalated: Patient admission intake screen non-responsive.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1435,Clinical Alert: HL7 ORM order message stuck in pending — lab not receiving orders. Ongoing since 06:00.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1074,LabSys 5.1 client station freeze during result lookup. Second report from same ward.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1016,ED Nursing: LabSys viewer timeout when opening chemistry panel. Affecting multiple users.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1082,Radiology team: Legacy LabSys 5.1 client local cache corrupted.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1348,IT Help Desk: Patient registration workflow frozen at insurance verification step. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1384,Ward 3 reporting: Hospital SSO badge tap login failing for all staff in ward 5. Intermittent since yesterday.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1411,IT Help Desk: Interface message queue delayed HL7 lab feed. Recurring for third time this week.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1263,Reported by Nursing: PACS DICOM gateway connection failed for radiology scanner. Second report from same ward.,PACSView,4.1,Integration,High,KA-021,1,SYNTHETIC_BENCHMARK
+DS-1187,Reported by Nursing: Pharmacy order queue listener hanging on unit dose validation. No recent system changes.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1208,Night shift report: PACSView image loading over 90 seconds for chest X-ray in ED. Second report from same ward.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1327,ED Nursing: Patient registration workflow frozen at insurance verification step. Affecting patient care.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1344,Morning handover: EHRCore admissions screen freeze during multi-patient batch registration. Affecting multiple users.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1039,Critical: Lab result viewer displays infinite loading spinner on floor 3. Issue persisting for 2 hours.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1030,Hematology analyzer results not flowing into LabSys viewer. Workstation reboot did not fix.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1406,Clinical Alert: AuthGuard LDAP directory sync lagging 20 minutes — new password not recognized. Issue persisting for 2 hours.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1328,Reported by Nursing: EHRCore 6.0 UI freezes when selecting patient from search results list. Recurring for third time this week.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1141,Reported by Nursing: LabSys database service ORA-00020 maximum processes error at peak. Recurring for third time this week.,LabSys,5.4,Database,High,KA-022,1,SYNTHETIC_BENCHMARK
+DS-1223,Pharmacy calling: CT scan images buffering slowly on PACSView radiology workstation. Affecting patient care.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1315,IT Help Desk: EHR Core chart open operation timing out for ED rapid registration. All staff affected.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1181,Night shift report: Pharmacy order queue listener hanging on unit dose validation. Ongoing since 06:00.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1467,Night shift report: Printer unavailable in 4th floor nursing station. Second report from same ward.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1446,Urgent: HL7 ADT message pipeline delayed — patient admit not triggering worklists. On-call engineer notified.,HL7Router,3.5,Integration,High,KA-031,1,SYNTHETIC_BENCHMARK
+DS-1373,Clinical application login failure SSO auth error. Needs immediate IT response.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
+DS-1022,Clinical Alert: Lab result summary screen times out after 30 seconds on ward 7. Ongoing since 06:00.,LabSys,5.4,Application,High,KA-014,1,SYNTHETIC_BENCHMARK
+DS-1502,Urgent: PrintManager 1.4 spooler queue stuck with 50 pending jobs. Recurring for third time this week.,PrintManager,1.4,Infrastructure,Low,KA-002,1,SYNTHETIC_BENCHMARK
+DS-1180,IT Help Desk: MedFlow medication administration queue backed up 200+ pending orders. On-call engineer notified.,MedFlow,3.2,Application,High,KA-008,1,SYNTHETIC_BENCHMARK
+DS-1228,Ward 3 reporting: Radiology overnight batch image cache not cleared — morning sessions slow. Ongoing since 06:00.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1354,Recurring issue: Patient registration screen freezing during intake. Recurring for third time this week.,EHRCore,6.0,UI/Application,Medium,KA-005,1,SYNTHETIC_BENCHMARK
+DS-1086,Legacy station lab result cache overflow in version 5.1. First reported at shift change.,LabSys,5.1,Application,Medium,KA-003,1,SYNTHETIC_BENCHMARK
+DS-1219,Ward 3 reporting: PACSView image loading over 90 seconds for chest X-ray in ED. Ongoing since 06:00.,PACSView,4.1,Performance,Medium,KA-019,1,SYNTHETIC_BENCHMARK
+DS-1368,Reported by Nursing: Clinical app authentication gateway returning 401 error for valid users. Affecting multiple users.,AuthGuard,2.8,Authentication,High,KA-012,1,SYNTHETIC_BENCHMARK
