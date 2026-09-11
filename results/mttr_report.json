@@ -1,0 +1,154 @@
+{
+  "experiment_name": "Verified Resolution Assistant MTTR Evaluation",
+  "dataset_label": "SYNTHETIC_BENCHMARK",
+  "generated_at": "2026-09-11T10:24:14.442193",
+  "total_incidents": 300,
+  "recurring_incidents": 300,
+  "baseline": {
+    "mean_ttr": 36.92,
+    "median_ttr": 35.15,
+    "p90_ttr": 53.41
+  },
+  "assisted": {
+    "mean_ttr": 15.78,
+    "median_ttr": 14.8,
+    "p90_ttr": 22.28
+  },
+  "improvement": {
+    "absolute_reduction_minutes": 21.14,
+    "percentage_improvement": 57.26,
+    "target_pct": 15.0,
+    "target_met": true
+  },
+  "retrieval_accuracy": {
+    "top_1_pct": 91.0,
+    "top_3_pct": 91.0,
+    "version_compatible_pct": 100.0
+  },
+  "error_analysis": [
+    {
+      "category": "Correct retrieval",
+      "count": 273,
+      "pct": 91.0
+    },
+    {
+      "category": "No relevant resolution found",
+      "count": 19,
+      "pct": 6.3
+    },
+    {
+      "category": "Wrong semantic match",
+      "count": 8,
+      "pct": 2.7
+    },
+    {
+      "category": "Version mismatch (blocked)",
+      "count": 0,
+      "pct": 0.0
+    },
+    {
+      "category": "Stale knowledge article (blocked)",
+      "count": 0,
+      "pct": 0.0
+    },
+    {
+      "category": "Insufficient historical evidence",
+      "count": 27,
+      "pct": 9.0
+    },
+    {
+      "category": "Negative feedback threshold",
+      "count": 27,
+      "pct": 9.0
+    },
+    {
+      "category": "Human override",
+      "count": 27,
+      "pct": 9.0
+    },
+    {
+      "category": "High-impact requiring confirmation",
+      "count": 273,
+      "pct": 91.0
+    }
+  ],
+  "metrics_table": [
+    {
+      "metric": "Total incidents",
+      "baseline": 300,
+      "target": "-",
+      "measured": 300,
+      "unit": "count"
+    },
+    {
+      "metric": "Recurring incidents",
+      "baseline": 300,
+      "target": "-",
+      "measured": 300,
+      "unit": "count"
+    },
+    {
+      "metric": "Mean MTTR (minutes)",
+      "baseline": 36.92,
+      "target": 31.38,
+      "measured": 15.78,
+      "unit": "minutes"
+    },
+    {
+      "metric": "Median MTTR (minutes)",
+      "baseline": 35.15,
+      "target": "-",
+      "measured": 14.8,
+      "unit": "minutes"
+    },
+    {
+      "metric": "P90 MTTR (minutes)",
+      "baseline": 53.41,
+      "target": "-",
+      "measured": 22.28,
+      "unit": "minutes"
+    },
+    {
+      "metric": "MTTR reduction (absolute)",
+      "baseline": 0,
+      "target": "\u22655.54",
+      "measured": 21.14,
+      "unit": "minutes"
+    },
+    {
+      "metric": "MTTR improvement (%)",
+      "baseline": "0%",
+      "target": "\u226515.0%",
+      "measured": "57.26%",
+      "unit": "%"
+    },
+    {
+      "metric": "Target met",
+      "baseline": "N/A",
+      "target": "Yes",
+      "measured": "Yes",
+      "unit": "boolean"
+    },
+    {
+      "metric": "Retrieval Top-1 accuracy",
+      "baseline": "-",
+      "target": "\u226580%",
+      "measured": "91.0%",
+      "unit": "%"
+    },
+    {
+      "metric": "Retrieval Top-3 accuracy",
+      "baseline": "-",
+      "target": "\u226590%",
+      "measured": "91.0%",
+      "unit": "%"
+    },
+    {
+      "metric": "Version-compatible recommendations",
+      "baseline": "-",
+      "target": "100%",
+      "measured": "100.0%",
+      "unit": "%"
+    }
+  ]
+}

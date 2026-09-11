@@ -7,13 +7,17 @@ def seed_database():
     conn = get_db_connection()
     cursor = conn.cursor()
 
-    # Clear existing data
+    # Clear existing data including new tables
     tables = [
         "incidents", "resolved_tickets", "knowledge_articles", "feedback",
-        "system_versions", "events", "risk_register", "stakeholder_feedback"
+        "system_versions", "events", "event_audit", "override_logs",
+        "experiment_results", "risk_register", "stakeholder_feedback"
     ]
     for table in tables:
-        cursor.execute(f"DELETE FROM {table}")
+        try:
+            cursor.execute(f"DELETE FROM {table}")
+        except Exception:
+            pass  # Table may not exist yet in older DBs
 
     # 1. Seed System Versions
     system_versions = [
@@ -158,18 +162,18 @@ def seed_database():
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, incidents)
 
-    # 5. Seed Events for Incidents
+    # 5. Seed Events for Incidents — includes new received_at field
     events = [
-        ("EVT-301-1", "INC-301", "INCIDENT_CREATED", "2026-09-03 08:30", 1, "2026-09-03 08:30:05", "PROCESSED", "Incident created by IT engineer"),
-        ("EVT-301-2", "INC-301", "RECOMMENDATION_GENERATED", "2026-09-03 08:31", 2, "2026-09-03 08:31:02", "PROCESSED", "KA-014 retrieved with 92% confidence"),
-        ("EVT-301-3", "INC-301", "FIX_APPROVED", "2026-09-03 08:33", 3, "2026-09-03 08:33:15", "PROCESSED", "Approved by human engineer"),
-        ("EVT-301-4", "INC-301", "FIX_APPLIED", "2026-09-03 08:35", 4, "2026-09-03 08:35:40", "PROCESSED", "LabSys service restarted successfully"),
-        ("EVT-301-5", "INC-301", "INCIDENT_RESOLVED", "2026-09-03 08:48", 5, "2026-09-03 08:48:00", "PROCESSED", "Incident resolved in 18 min")
+        ("EVT-301-1", "INC-301", "INCIDENT_CREATED", "2026-09-03 08:30", 1, None, "2026-09-03 08:30:05", "2026-09-03 08:30:05", "PROCESSED", "Incident created by IT engineer"),
+        ("EVT-301-2", "INC-301", "RECOMMENDATION_GENERATED", "2026-09-03 08:31", 2, None, "2026-09-03 08:31:02", "2026-09-03 08:31:02", "PROCESSED", "KA-014 retrieved with 92% confidence"),
+        ("EVT-301-3", "INC-301", "FIX_APPROVED", "2026-09-03 08:33", 3, None, "2026-09-03 08:33:15", "2026-09-03 08:33:15", "PROCESSED", "Approved by human engineer"),
+        ("EVT-301-4", "INC-301", "FIX_APPLIED", "2026-09-03 08:35", 4, None, "2026-09-03 08:35:40", "2026-09-03 08:35:40", "PROCESSED", "LabSys service restarted successfully"),
+        ("EVT-301-5", "INC-301", "INCIDENT_RESOLVED", "2026-09-03 08:48", 5, None, "2026-09-03 08:48:00", "2026-09-03 08:48:00", "PROCESSED", "Incident resolved in 18 min")
     ]
     cursor.executemany("""
         INSERT INTO events
-        (event_id, incident_id, event_type, event_timestamp, sequence_number, processed_at, status, details)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        (event_id, incident_id, event_type, event_timestamp, sequence_number, payload, received_at, processed_at, status, details)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, events)
 
     # 6. Seed Risk Register

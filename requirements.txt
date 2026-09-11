@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+httpx
+anyio
+pytest
+pytest-anyio
+scikit-learn
+numpy
+scipy
+joblib
+pandas
+sentence-transformers

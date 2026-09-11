@@ -1,7 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pathlib import Path
 from scripts.train_model import train_and_evaluate_model, MODEL_PATH
-from backend.retrieval_engine import load_trained_model
 
 router = APIRouter(prefix="/api/ml", tags=["machine_learning"])
 
@@ -10,8 +9,6 @@ def train_machine_learning_model():
     """Trigger ML model training pipeline, update joblib artifacts, and reload model in memory."""
     try:
         metrics = train_and_evaluate_model()
-        # Reload model in memory
-        load_trained_model()
         return {
             "status": "SUCCESS",
             "message": "Machine Learning model trained and deployed successfully!",

@@ -1,0 +1,12 @@
+metric,baseline,target,measured,unit
+Total incidents,300,-,300,count
+Recurring incidents,300,-,300,count
+Mean MTTR (minutes),36.92,31.38,15.78,minutes
+Median MTTR (minutes),35.15,-,14.8,minutes
+P90 MTTR (minutes),53.41,-,22.28,minutes
+MTTR reduction (absolute),0,≥5.54,21.14,minutes
+MTTR improvement (%),0%,≥15.0%,57.26%,%
+Target met,N/A,Yes,Yes,boolean
+Retrieval Top-1 accuracy,-,≥80%,91.0%,%
+Retrieval Top-3 accuracy,-,≥90%,91.0%,%
+Version-compatible recommendations,-,100%,100.0%,%

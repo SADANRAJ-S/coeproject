@@ -46,12 +46,9 @@ app.include_router(ml.router)
 
 @app.on_event("startup")
 def on_startup():
-    db_file = BASE_DIR / "hospital_it.db"
-    if not db_file.exists():
-        print("Database not found. Initializing and seeding synthetic hospital IT data...")
-        seed_database()
-    else:
-        print(f"Connected to database at {db_file}")
+    print("Initialising database with latest schema and seed data...")
+    seed_database()
+    print(f"Database ready at {BASE_DIR / 'hospital_it.db'}")
 
 @app.get("/", response_class=FileResponse)
 def serve_index():
