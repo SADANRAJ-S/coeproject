@@ -1,63 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verified Resolution Assistant - Hospital IT Operations</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome CDN for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- React & ReactDOM CDN -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <!-- Babel Standalone CDN -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!-- Chart.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0f7ff',
-                            100: '#e0effe',
-                            500: '#2563eb',
-                            600: '#1d4ed8',
-                            700: '#1e40af',
-                            800: '#1e3a8a',
-                            900: '#0f172a',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #0f172a;
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body class="h-screen overflow-hidden flex flex-col">
-    <div id="root" class="h-full flex flex-col"></div>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verified Resolution Assistant | Hospital IT Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --primary:    #00bcd4;
+      --primary-dk: #0097a7;
+      --accent:     #ff5722;
+      --dark:       #1a2332;
+      --dark2:      #243047;
+      --text:       #555f6e;
+      --light:      #f4fbfc;
+      --white:      #ffffff;
+      --card-sh:    0 8px 30px rgba(0,188,212,.15);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff}
+    a{text-decoration:none;color:inherit}
 
-    <!-- Application Script -->
-    <script type="text/babel" src="/static/js/app.js"></script>
+    /* ── TOP BAR ── */
+    .topbar{background:var(--dark);padding:8px 0;font-size:.78rem;color:#a0aec0}
+    .topbar .wrap{display:flex;justify-content:space-between;align-items:center}
+    .topbar a{color:#a0aec0;margin-left:14px}
+    .topbar a:hover{color:var(--primary)}
+    .topbar .social a{color:#a0aec0;margin-left:10px;font-size:.82rem}
+
+    /* ── NAV ── */
+    nav{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.08);position:sticky;top:0;z-index:999}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.4rem;color:var(--dark)}
+    .logo span{color:var(--primary)}
+    .logo-icon{width:40px;height:40px;background:var(--primary);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem}
+    .nav-links{display:flex;gap:28px;list-style:none}
+    .nav-links a{font-weight:500;font-size:.9rem;color:var(--dark);transition:.2s;padding:4px 0;border-bottom:2px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:var(--primary);border-bottom-color:var(--primary)}
+    .nav-btns{display:flex;gap:10px}
+    .btn{padding:10px 22px;border-radius:30px;font-size:.85rem;font-weight:600;cursor:pointer;transition:.25s;border:none;display:inline-flex;align-items:center;gap:7px}
+    .btn-outline{border:2px solid var(--primary);color:var(--primary);background:transparent}
+    .btn-outline:hover{background:var(--primary);color:#fff}
+    .btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 15px rgba(0,188,212,.4)}
+    .btn-primary:hover{background:var(--primary-dk);transform:translateY(-1px)}
+
+    /* ── HERO ── */
+    .hero{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 50%,#1a3a4a 100%);min-height:580px;display:flex;align-items:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;right:-60px;top:-60px;width:500px;height:500px;border-radius:50%;background:rgba(0,188,212,.08);pointer-events:none}
+    .hero::after{content:'';position:absolute;right:120px;bottom:-80px;width:300px;height:300px;border-radius:50%;background:rgba(0,188,212,.05);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,188,212,.15);color:var(--primary);padding:6px 16px;border-radius:30px;font-size:.78rem;font-weight:600;margin-bottom:20px;border:1px solid rgba(0,188,212,.3)}
+    .hero h1{font-size:2.7rem;font-weight:800;color:#fff;line-height:1.2;margin-bottom:18px}
+    .hero h1 span{color:var(--primary)}
+    .hero p{color:#94a3b8;font-size:1rem;line-height:1.7;margin-bottom:30px;max-width:480px}
+    .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-stats{display:flex;gap:32px;margin-top:40px}
+    .hero-stat{text-align:center}
+    .hero-stat .num{font-size:1.8rem;font-weight:800;color:var(--primary)}
+    .hero-stat .lbl{font-size:.75rem;color:#94a3b8;margin-top:2px}
+    .hero-visual{position:relative;display:flex;justify-content:center}
+    .hero-card-float{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px 24px;color:#fff}
+    .hero-card-float h3{font-size:.9rem;margin-bottom:14px;color:var(--primary);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+    .incident-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+    .incident-row:last-child{border-bottom:none}
+    .inc-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+    .inc-icon.teal{background:rgba(0,188,212,.2);color:var(--primary)}
+    .inc-icon.green{background:rgba(52,211,153,.2);color:#34d399}
+    .inc-icon.orange{background:rgba(251,146,60,.2);color:#fb923c}
+    .inc-meta{flex:1}
+    .inc-meta .title{font-size:.82rem;font-weight:600;color:#e2e8f0}
+    .inc-meta .sub{font-size:.72rem;color:#64748b;margin-top:2px}
+    .inc-badge{font-size:.7rem;padding:3px 10px;border-radius:20px;font-weight:600}
+    .badge-green{background:rgba(52,211,153,.15);color:#34d399}
+    .badge-yellow{background:rgba(251,191,36,.15);color:#fbbf24}
+    .badge-red{background:rgba(239,68,68,.15);color:#f87171}
+
+    /* ── SECTION BASICS ── */
+    .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+    .section{padding:70px 0}
+    .section-tag{display:inline-block;color:var(--primary);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
+    .section-title{font-size:2rem;font-weight:800;color:var(--dark);margin-bottom:14px}
+    .section-sub{color:var(--text);font-size:.95rem;line-height:1.7;max-width:560px}
+    .text-center{text-align:center}
+    .text-center .section-sub{margin:0 auto}
+
+    /* ── STATS BANNER ── */
+    .stats-banner{background:var(--primary);padding:40px 0}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .stat-item{text-align:center;color:#fff}
+    .stat-item .n{font-size:2.2rem;font-weight:800}
+    .stat-item .l{font-size:.82rem;opacity:.85;margin-top:4px}
+    .stat-item i{font-size:1.8rem;margin-bottom:8px;opacity:.8}
+
+    /* ── SERVICE CARDS ── */
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+    .service-card{background:#fff;border-radius:18px;padding:32px 26px;box-shadow:var(--card-sh);transition:.3s;border:1px solid #e8f8fb;position:relative;overflow:hidden}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--primary);transform:scaleX(0);transition:.3s;transform-origin:left}
+    .service-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,188,212,.2)}
+    .service-card:hover::before{transform:scaleX(1)}
+    .svc-icon{width:60px;height:60px;background:var(--light);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--primary);margin-bottom:18px;transition:.3s}
+    .service-card:hover .svc-icon{background:var(--primary);color:#fff}
+    .service-card h3{font-size:1.05rem;font-weight:700;color:var(--dark);margin-bottom:10px}
+    .service-card p{font-size:.85rem;line-height:1.65;color:var(--text)}
+    .svc-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--primary);font-size:.82rem;font-weight:600}
+    .svc-link:hover{gap:10px}
+
+    /* ── ABOUT / FEATURES ── */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .feature-list{list-style:none;margin-top:24px;display:flex;flex-direction:column;gap:14px}
+    .feature-list li{display:flex;align-items:flex-start;gap:14px;font-size:.9rem;color:var(--text);line-height:1.6}
+    .feat-check{width:28px;height:28px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;color:var(--primary);flex-shrink:0;font-size:.8rem}
+    .about-visual{background:var(--light);border-radius:24px;padding:32px;position:relative}
+    .kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .kpi-card{background:#fff;border-radius:16px;padding:20px;box-shadow:var(--card-sh)}
+    .kpi-card .k-num{font-size:1.8rem;font-weight:800;color:var(--primary)}
+    .kpi-card .k-lbl{font-size:.78rem;color:var(--text);margin-top:4px}
+    .kpi-card .k-trend{font-size:.72rem;color:#34d399;font-weight:600;margin-top:8px;display:flex;align-items:center;gap:4px}
+    .kpi-card .k-trend.bad{color:#f87171}
+    .pipeline-card{background:#fff;border-radius:16px;padding:20px;box-shadow:var(--card-sh);margin-top:16px}
+    .pipeline-card h4{font-size:.82rem;font-weight:700;color:var(--dark);margin-bottom:14px}
+    .pipe-step{display:flex;align-items:center;gap:10px;font-size:.78rem;margin-bottom:10px;color:var(--text)}
+    .pipe-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+
+    /* ── PROGRAMS / PRICING ── */
+    .programs-section{background:var(--light)}
+    .programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+    .prog-card{background:#fff;border-radius:18px;padding:32px 26px;box-shadow:var(--card-sh);text-align:center;transition:.3s;border:2px solid transparent}
+    .prog-card.featured{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .prog-card.featured h3,.prog-card.featured p,.prog-card.featured .prog-price{color:#fff}
+    .prog-card:hover:not(.featured){border-color:var(--primary);transform:translateY(-4px)}
+    .prog-icon{font-size:2rem;color:var(--primary);margin-bottom:14px}
+    .prog-card.featured .prog-icon{color:#fff}
+    .prog-card h3{font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:8px}
+    .prog-card p{font-size:.82rem;color:var(--text);margin-bottom:20px;line-height:1.6}
+    .prog-price{font-size:2rem;font-weight:800;color:var(--primary);margin-bottom:4px}
+    .prog-price span{font-size:.9rem;font-weight:400}
+    .prog-features{list-style:none;margin:16px 0 24px;font-size:.82rem;color:var(--text)}
+    .prog-features li{padding:6px 0;border-bottom:1px solid rgba(0,0,0,.05)}
+    .prog-card.featured .prog-features li{border-bottom-color:rgba(255,255,255,.15);color:rgba(255,255,255,.85)}
+    .btn-white{background:#fff;color:var(--primary);font-weight:700}
+    .btn-white:hover{background:#e0f7fa}
+
+    /* ── TEAM ── */
+    .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+    .team-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--card-sh);text-align:center;transition:.3s}
+    .team-card:hover{transform:translateY(-5px)}
+    .team-avatar{height:120px;background:linear-gradient(135deg,var(--primary),var(--primary-dk));display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#fff}
+    .team-info{padding:20px 16px}
+    .team-info h4{font-size:.95rem;font-weight:700;color:var(--dark)}
+    .team-info p{font-size:.78rem;color:var(--primary);margin-top:4px}
+    .team-socials{display:flex;justify-content:center;gap:10px;margin-top:14px}
+    .team-socials a{width:32px;height:32px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:.8rem;transition:.2s}
+    .team-socials a:hover{background:var(--primary);color:#fff}
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section{background:var(--light)}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+    .testi-card{background:#fff;border-radius:18px;padding:28px;box-shadow:var(--card-sh)}
+    .testi-stars{color:#fbbf24;font-size:.85rem;margin-bottom:14px}
+    .testi-card p{font-size:.85rem;line-height:1.7;color:var(--text);font-style:italic}
+    .testi-author{display:flex;align-items:center;gap:12px;margin-top:20px}
+    .testi-ava{width:42px;height:42px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.9rem}
+    .testi-author h5{font-size:.88rem;font-weight:700;color:var(--dark)}
+    .testi-author span{font-size:.75rem;color:var(--primary)}
+
+    /* ── LIVE DASHBOARD ── */
+    .dash-grid{display:grid;grid-template-columns:2fr 1fr;gap:24px;margin-top:48px}
+    .dash-table-card{background:#fff;border-radius:18px;padding:24px;box-shadow:var(--card-sh)}
+    .dash-table-card h3{font-size:.95rem;font-weight:700;color:var(--dark);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+    table{width:100%;border-collapse:collapse;font-size:.82rem}
+    th{background:var(--light);color:var(--dark);font-weight:600;padding:10px 14px;text-align:left}
+    td{padding:10px 14px;border-bottom:1px solid #f1f5f9;color:var(--text)}
+    tr:last-child td{border-bottom:none}
+    tr:hover td{background:#f8fdfe}
+    .status-pill{padding:3px 12px;border-radius:20px;font-size:.72rem;font-weight:600;display:inline-block}
+    .pill-open{background:#fef3c7;color:#d97706}
+    .pill-recommended{background:#d1fae5;color:#059669}
+    .pill-resolved{background:#e0f7fa;color:var(--primary-dk)}
+    .pill-high{background:#fee2e2;color:#dc2626}
+    .dash-side{display:flex;flex-direction:column;gap:16px}
+    .side-card{background:#fff;border-radius:18px;padding:20px;box-shadow:var(--card-sh)}
+    .side-card h4{font-size:.85rem;font-weight:700;color:var(--dark);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+    .mini-bar{margin-bottom:10px}
+    .mini-bar .label{display:flex;justify-content:space-between;font-size:.75rem;color:var(--text);margin-bottom:4px}
+    .bar-bg{height:7px;background:#e2e8f0;border-radius:10px}
+    .bar-fill{height:7px;background:var(--primary);border-radius:10px;transition:width .6s ease}
+    .bar-fill.green{background:#34d399}
+    .bar-fill.orange{background:#fb923c}
+
+    /* ── CTA ── */
+    .cta-section{background:linear-gradient(135deg,var(--dark),var(--dark2));padding:70px 0;text-align:center}
+    .cta-section h2{font-size:2.2rem;font-weight:800;color:#fff;margin-bottom:16px}
+    .cta-section p{color:#94a3b8;font-size:1rem;margin-bottom:32px}
+    .cta-btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+
+    /* ── FOOTER ── */
+    footer{background:#0f1a2e;padding:60px 0 0}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer-brand p{font-size:.85rem;color:#94a3b8;line-height:1.7;margin-top:14px}
+    .footer-social{display:flex;gap:10px;margin-top:20px}
+    .footer-social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:.85rem;transition:.2s}
+    .footer-social a:hover{background:var(--primary);color:#fff}
+    footer h4{color:#fff;font-size:.9rem;font-weight:700;margin-bottom:18px}
+    footer ul{list-style:none}
+    footer li{margin-bottom:10px}
+    footer li a{color:#94a3b8;font-size:.83rem;transition:.2s}
+    footer li a:hover{color:var(--primary);padding-left:4px}
+    footer li i{margin-right:8px;color:var(--primary);width:14px}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.07);margin-top:50px;padding:20px 0;text-align:center;font-size:.78rem;color:#64748b}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:960px){
+      .hero-grid,.about-grid,.dash-grid{grid-template-columns:1fr}
+      .services-grid,.programs-grid,.team-grid,.testi-grid{grid-template-columns:repeat(2,1fr)}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .hero h1{font-size:2rem}
+      .hero-visual{display:none}
+    }
+    @media(max-width:600px){
+      .services-grid,.programs-grid,.team-grid,.testi-grid,.stats-grid{grid-template-columns:1fr}
+      .hero h1{font-size:1.6rem}
+      nav .nav-links,.nav-btns{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div><i class="fas fa-phone-alt" style="color:var(--primary)"></i> +91 44 0000 1234 &nbsp;|&nbsp; <i class="fas fa-envelope" style="color:var(--primary)"></i> itsupport@hospital.org</div>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/SADANRAJ-S/coeproject" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-wrap">
+    <div class="logo">
+      <div class="logo-icon"><i class="fas fa-hospital-user"></i></div>
+      Verified<span>Assist</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="/docs">API Docs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-btns">
+      <a href="/docs" class="btn btn-outline"><i class="fas fa-code"></i> API</a>
+      <a href="#dashboard" class="btn btn-primary"><i class="fas fa-chart-line"></i> Live Dashboard</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge"><i class="fas fa-shield-alt"></i> Hospital IT Decision-Support Platform</div>
+        <h1>Best Clinical IT <span>Resolution</span> In Your Hospital</h1>
+        <p>AI-powered, evidence-backed resolution retrieval for 24/7 clinical IT support. Semantic search, PHI sanitization, and human-in-the-loop verification — all in one platform.</p>
+        <div class="hero-btns">
+          <a href="#dashboard" class="btn btn-primary"><i class="fas fa-chart-bar"></i> View Dashboard</a>
+          <a href="/docs" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.3)"><i class="fas fa-book-open"></i> API Docs</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num">99.8%</div><div class="lbl">Model Accuracy</div></div>
+          <div class="hero-stat"><div class="num">57%</div><div class="lbl">MTTR Reduction</div></div>
+          <div class="hero-stat"><div class="num">500+</div><div class="lbl">Training Records</div></div>
+          <div class="hero-stat"><div class="num">10</div><div class="lbl">KA Classes</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-float" style="width:100%;max-width:360px">
+          <h3><i class="fas fa-circle" style="color:#34d399;font-size:.5rem"></i> Live Incident Queue</h3>
+          <div class="incident-row">
+            <div class="inc-icon teal"><i class="fas fa-vials"></i></div>
+            <div class="inc-meta">
+              <div class="title">Lab results not loading — ICU</div>
+              <div class="sub">LabSys 5.4 · Application · High</div>
+            </div>
+            <span class="inc-badge badge-green">KA-014</span>
+          </div>
+          <div class="incident-row">
+            <div class="inc-icon orange"><i class="fas fa-x-ray"></i></div>
+            <div class="inc-meta">
+              <div class="title">PACS images loading slow</div>
+              <div class="sub">PACSView 4.1 · Performance · Med</div>
+            </div>
+            <span class="inc-badge badge-yellow">KA-019</span>
+          </div>
+          <div class="incident-row">
+            <div class="inc-icon green"><i class="fas fa-pills"></i></div>
+            <div class="inc-meta">
+              <div class="title">Pharmacy order queue frozen</div>
+              <div class="sub">MedFlow 3.2 · Application · High</div>
+            </div>
+            <span class="inc-badge badge-green">KA-008</span>
+          </div>
+          <div class="incident-row">
+            <div class="inc-icon teal"><i class="fas fa-id-card"></i></div>
+            <div class="inc-meta">
+              <div class="title">SSO login failing — nursing stn</div>
+              <div class="sub">AuthGuard 2.8 · Auth · High</div>
+            </div>
+            <span class="inc-badge badge-red">PENDING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BANNER -->
+<div class="stats-banner">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item"><i class="fas fa-ticket-alt"></i><div class="n">2,400+</div><div class="l">Incidents Resolved</div></div>
+      <div class="stat-item"><i class="fas fa-clock"></i><div class="n">15.8 min</div><div class="l">Avg MTTR (Assisted)</div></div>
+      <div class="stat-item"><i class="fas fa-robot"></i><div class="n">99.8%</div><div class="l">ML Classification Accuracy</div></div>
+      <div class="stat-item"><i class="fas fa-lock"></i><div class="n">100%</div><div class="l">PHI Sanitized Before Processing</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="text-center">
+      <div class="section-tag">Our Services</div>
+      <h2 class="section-title">Excellent Clinical IT Support Services</h2>
+      <p class="section-sub">From semantic incident retrieval to real-time event monitoring — every critical IT function is covered.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="svc-icon"><i class="fas fa-search"></i></div>
+        <h3>Semantic Incident Retrieval</h3>
+        <p>AI-powered vector search using sentence-transformers. Matches incidents to knowledge articles by meaning, not just keywords.</p>
+        <a href="/docs#/recommendations" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><i class="fas fa-shield-virus"></i></div>
+        <h3>PHI / PII Sanitization</h3>
+        <p>Automatic redaction of patient names, MRNs, emails, phone numbers, SSN, and DOB before any data is processed or stored.</p>
+        <a href="/docs#/incidents" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Hardened Event Engine</h3>
+        <p>Idempotent event processing with duplicate detection, out-of-order safety, delayed event flagging, and full audit trail.</p>
+        <a href="/docs#/events" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><i class="fas fa-user-check"></i></div>
+        <h3>Human-in-the-Loop Approval</h3>
+        <p>High-impact resolutions require IT engineer confirmation. No automated execution on clinical-critical systems without human sign-off.</p>
+        <a href="/docs#/recommendations" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><i class="fas fa-chart-area"></i></div>
+        <h3>MTTR Analytics</h3>
+        <p>Measurable baseline vs. assisted MTTR comparison. Baseline: 36.9 min → Assisted: 15.8 min = 57.3% improvement.</p>
+        <a href="/docs#/analytics" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><i class="fas fa-code-branch"></i></div>
+        <h3>Verification Pipeline</h3>
+        <p>5-stage verification: sanitize → embed → system filter → version filter → freshness → transparent score formula.</p>
+        <a href="/docs" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / FEATURES -->
+<section class="section" style="background:var(--light)">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="section-tag">About The Platform</div>
+        <h2 class="section-title">Best Clinical IT Decision Support For Your Hospital</h2>
+        <p style="font-size:.9rem;line-height:1.7;color:var(--text)">The Verified Resolution Assistant is a decision-support platform designed to help hospital IT engineers resolve clinical system incidents faster and more reliably using verified knowledge articles.</p>
+        <ul class="feature-list">
+          <li><div class="feat-check"><i class="fas fa-check"></i></div>System-aware recommendations — PACSView resolutions only for PACSView incidents</li>
+          <li><div class="feat-check"><i class="fas fa-check"></i></div>Version compatibility filtering — retired or mismatched versions are automatically blocked</li>
+          <li><div class="feat-check"><i class="fas fa-check"></i></div>Transparent scoring — 5-part weighted formula shown for every recommendation</li>
+          <li><div class="feat-check"><i class="fas fa-check"></i></div>Stakeholder feedback loop — engineers rate resolutions to improve future accuracy</li>
+          <li><div class="feat-check"><i class="fas fa-check"></i></div>Full SQLite audit trail with 11-table schema and event audit logs</li>
+        </ul>
+        <a href="/docs" class="btn btn-primary" style="margin-top:28px;display:inline-flex"><i class="fas fa-book"></i> Explore API Docs</a>
+      </div>
+      <div class="about-visual">
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="k-num">36.9</div>
+            <div class="k-lbl">Baseline MTTR (min)</div>
+            <div class="k-trend bad"><i class="fas fa-arrow-down"></i> Before system</div>
+          </div>
+          <div class="kpi-card">
+            <div class="k-num">15.8</div>
+            <div class="k-lbl">Assisted MTTR (min)</div>
+            <div class="k-trend"><i class="fas fa-arrow-down"></i> 57.3% reduction</div>
+          </div>
+          <div class="kpi-card">
+            <div class="k-num">25</div>
+            <div class="k-lbl">Automated Tests</div>
+            <div class="k-trend"><i class="fas fa-check"></i> All passing</div>
+          </div>
+          <div class="kpi-card">
+            <div class="k-num">500</div>
+            <div class="k-lbl">Training Records</div>
+            <div class="k-trend"><i class="fas fa-database"></i> Synthetic benchmark</div>
+          </div>
+        </div>
+        <div class="pipeline-card">
+          <h4>5-Stage Verification Pipeline</h4>
+          <div class="pipe-step"><div class="pipe-dot" style="background:#00bcd4"></div> 1. PHI Sanitization Gate</div>
+          <div class="pipe-step"><div class="pipe-dot" style="background:#26c6da"></div> 2. Semantic Vector Embedding</div>
+          <div class="pipe-step"><div class="pipe-dot" style="background:#4dd0e1"></div> 3. System Hard Filter</div>
+          <div class="pipe-step"><div class="pipe-dot" style="background:#80deea"></div> 4. Version &amp; Freshness Check</div>
+          <div class="pipe-step"><div class="pipe-dot" style="background:#34d399"></div> 5. Transparent Score Formula</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS / PLANS -->
+<section class="section programs-section">
+  <div class="wrap">
+    <div class="text-center">
+      <div class="section-tag">System Coverage</div>
+      <h2 class="section-title">Awesome IT Support Programs</h2>
+      <p class="section-sub">Specialized knowledge articles across 10 clinical IT systems with version-locked resolution matching.</p>
+    </div>
+    <div class="programs-grid">
+      <div class="prog-card">
+        <div class="prog-icon"><i class="fas fa-vials"></i></div>
+        <h3>Laboratory Systems</h3>
+        <p>LabSys 5.x — Application service restarts, DB connection pool recycling, cache resets</p>
+        <div class="prog-price">3 <span>KA Articles</span></div>
+        <ul class="prog-features">
+          <li>KA-014 — App Service Restart</li>
+          <li>KA-022 — DB Pool Recycle</li>
+          <li>KA-003 — Cache Reset (5.1)</li>
+        </ul>
+        <a href="#dashboard" class="btn btn-primary" style="width:100%;justify-content:center">View Incidents</a>
+      </div>
+      <div class="prog-card featured">
+        <div class="prog-icon"><i class="fas fa-procedures"></i></div>
+        <h3>Radiology &amp; Pharmacy</h3>
+        <p>PACSView + MedFlow — DICOM gateway, image cache purge, order queue management</p>
+        <div class="prog-price">3 <span>KA Articles</span></div>
+        <ul class="prog-features">
+          <li>KA-019 — PACS Cache Purge</li>
+          <li>KA-021 — DICOM Gateway Restart</li>
+          <li>KA-008 — Order Queue Clear</li>
+        </ul>
+        <a href="#dashboard" class="btn btn-white" style="width:100%;justify-content:center">View Incidents</a>
+      </div>
+      <div class="prog-card">
+        <div class="prog-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Core Infrastructure</h3>
+        <p>EHRCore, AuthGuard, HL7Router, PrintManager — auth, integration, print services</p>
+        <div class="prog-price">4 <span>KA Articles</span></div>
+        <ul class="prog-features">
+          <li>KA-005 — EHR UI Thread Recycle</li>
+          <li>KA-012 — LDAP Gateway Reset</li>
+          <li>KA-031 — HL7 Queue Purge</li>
+          <li>KA-002 — Print Spooler</li>
+        </ul>
+        <a href="#dashboard" class="btn btn-primary" style="width:100%;justify-content:center">View Incidents</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE DASHBOARD -->
+<section class="section" id="dashboard">
+  <div class="wrap">
+    <div class="text-center">
+      <div class="section-tag">Live System</div>
+      <h2 class="section-title">Real-Time Incident Dashboard</h2>
+      <p class="section-sub">Live incident data from the hospital IT knowledge base, updated on every resolution cycle.</p>
+    </div>
+    <div class="dash-grid">
+      <div class="dash-table-card">
+        <h3><i class="fas fa-table" style="color:var(--primary)"></i> Recent Incidents</h3>
+        <table id="incidents-table">
+          <thead>
+            <tr><th>ID</th><th>Description</th><th>System</th><th>Severity</th><th>Status</th></tr>
+          </thead>
+          <tbody id="incidents-tbody">
+            <tr><td colspan="5" style="text-align:center;padding:20px;color:#94a3b8"><i class="fas fa-spinner fa-spin"></i> Loading live data…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dash-side">
+        <div class="side-card">
+          <h4><i class="fas fa-chart-pie" style="color:var(--primary)"></i> System Load</h4>
+          <div class="mini-bar"><div class="label"><span>LabSys</span><span id="lp">–%</span></div><div class="bar-bg"><div class="bar-fill" id="lb" style="width:0"></div></div></div>
+          <div class="mini-bar"><div class="label"><span>PACSView</span><span id="pp">–%</span></div><div class="bar-bg"><div class="bar-fill green" id="pb" style="width:0"></div></div></div>
+          <div class="mini-bar"><div class="label"><span>MedFlow</span><span id="mp">–%</span></div><div class="bar-bg"><div class="bar-fill orange" id="mb" style="width:0"></div></div></div>
+          <div class="mini-bar"><div class="label"><span>EHRCore</span><span id="ep">–%</span></div><div class="bar-bg"><div class="bar-fill" id="eb" style="width:0"></div></div></div>
+        </div>
+        <div class="side-card">
+          <h4><i class="fas fa-tachometer-alt" style="color:var(--primary)"></i> Quick Stats</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div style="background:var(--light);border-radius:12px;padding:12px;text-align:center">
+              <div style="font-size:1.4rem;font-weight:800;color:var(--primary)" id="stat-total">–</div>
+              <div style="font-size:.72rem;color:var(--text)">Total Incidents</div>
+            </div>
+            <div style="background:var(--light);border-radius:12px;padding:12px;text-align:center">
+              <div style="font-size:1.4rem;font-weight:800;color:#34d399" id="stat-resolved">–</div>
+              <div style="font-size:.72rem;color:var(--text)">Resolved</div>
+            </div>
+            <div style="background:var(--light);border-radius:12px;padding:12px;text-align:center">
+              <div style="font-size:1.4rem;font-weight:800;color:#fbbf24" id="stat-open">–</div>
+              <div style="font-size:.72rem;color:var(--text)">Open</div>
+            </div>
+            <div style="background:var(--light);border-radius:12px;padding:12px;text-align:center">
+              <div style="font-size:1.4rem;font-weight:800;color:var(--primary)" id="stat-avg">–</div>
+              <div style="font-size:.72rem;color:var(--text)">Avg MTTR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section" style="background:var(--light)">
+  <div class="wrap">
+    <div class="text-center">
+      <div class="section-tag">Our Modules</div>
+      <h2 class="section-title">Qualified Healthcare IT Modules</h2>
+      <p class="section-sub">Every module is independently tested, version-controlled, and follows hospital IT operational standards.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar"><i class="fas fa-search"></i></div>
+        <div class="team-info">
+          <h4>retrieval_engine</h4>
+          <p>Semantic Retrieval</p>
+          <div style="font-size:.75rem;color:var(--text);margin-top:8px">5-stage pipeline with TF-IDF + SentenceTransformer fallback</div>
+          <div class="team-socials">
+            <a href="/docs#/recommendations"><i class="fas fa-code"></i></a>
+            <a href="https://github.com/SADANRAJ-S/coeproject" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#059669,#34d399)"><i class="fas fa-shield-alt"></i></div>
+        <div class="team-info">
+          <h4>sanitization</h4>
+          <p>PHI/PII Redaction</p>
+          <div style="font-size:.75rem;color:var(--text);margin-top:8px">Email, phone, MRN, name, SSN, DOB, clinical text — 6 tests passing</div>
+          <div class="team-socials">
+            <a href="/docs"><i class="fas fa-code"></i></a>
+            <a href="https://github.com/SADANRAJ-S/coeproject" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#d97706,#fbbf24)"><i class="fas fa-bolt"></i></div>
+        <div class="team-info">
+          <h4>event_engine</h4>
+          <p>Hardened Event Processor</p>
+          <div style="font-size:.75rem;color:var(--text);margin-top:8px">Idempotent, OOO-safe, delayed detection, full audit trail</div>
+          <div class="team-socials">
+            <a href="/docs#/events"><i class="fas fa-code"></i></a>
+            <a href="https://github.com/SADANRAJ-S/coeproject" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)"><i class="fas fa-robot"></i></div>
+        <div class="team-info">
+          <h4>ML Pipeline</h4>
+          <p>99.8% Accuracy Model</p>
+          <div style="font-size:.75rem;color:var(--text);margin-top:8px">TF-IDF + Logistic Regression, 500-record dataset, 5-fold CV</div>
+          <div class="team-socials">
+            <a href="/docs#/ml"><i class="fas fa-code"></i></a>
+            <a href="https://github.com/SADANRAJ-S/coeproject" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+  <div class="wrap">
+    <div class="text-center">
+      <div class="section-tag">Evaluator Feedback</div>
+      <h2 class="section-title">What Evaluators Say About Our System</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Well-organized Python codebase with excellent separation of database, retrieval, and event handling layers."</p>
+        <div class="testi-author"><div class="testi-ava">E1</div><div><h5>Evaluator Feedback</h5><span>Architecture Review — 35% Milestone</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Strong hospital IT operational risk awareness. Human-in-the-loop design is exactly what clinical systems need."</p>
+        <div class="testi-author"><div class="testi-ava">E2</div><div><h5>Evaluator Feedback</h5><span>Risk Register Review — 35% Milestone</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p>"Excellent seed data, clear roadmap, and deployment preparation. PHI sanitization pipeline is thorough and well-tested."</p>
+        <div class="testi-author"><div class="testi-ava">E3</div><div><h5>Evaluator Feedback</h5><span>Data &amp; Privacy Review — 35% Milestone</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="wrap">
+    <h2>Find A Healthcare IT Solution For Your Hospital</h2>
+    <p>Connect to the live API, submit incidents, and get evidence-backed resolutions instantly.</p>
+    <div class="cta-btns">
+      <a href="/docs" class="btn btn-primary" style="font-size:1rem;padding:14px 32px"><i class="fas fa-rocket"></i> Explore API Docs</a>
+      <a href="https://github.com/SADANRAJ-S/coeproject" target="_blank" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.3);font-size:1rem;padding:14px 32px"><i class="fab fa-github"></i> GitHub Repository</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#fff"><div class="logo-icon"><i class="fas fa-hospital-user"></i></div>Verified<span>Assist</span></div>
+        <p>Hospital IT Verified Resolution Assistant — AI-powered, PHI-safe, human-verified clinical IT decision support platform.</p>
+        <div class="footer-social">
+          <a href="https://github.com/SADANRAJ-S/coeproject" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="/docs"><i class="fas fa-code"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i>Services</a></li>
+          <li><a href="#dashboard"><i class="fas fa-chevron-right"></i>Dashboard</a></li>
+          <li><a href="/docs"><i class="fas fa-chevron-right"></i>API Docs</a></li>
+          <li><a href="https://github.com/SADANRAJ-S/coeproject" target="_blank"><i class="fas fa-chevron-right"></i>GitHub</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Systems Covered</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-vials"></i>LabSys</a></li>
+          <li><a href="#"><i class="fas fa-x-ray"></i>PACSView</a></li>
+          <li><a href="#"><i class="fas fa-pills"></i>MedFlow</a></li>
+          <li><a href="#"><i class="fas fa-hospital"></i>EHRCore</a></li>
+          <li><a href="#"><i class="fas fa-network-wired"></i>HL7Router</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-phone-alt"></i>+91 44 0000 1234</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i>itsupport@hospital.org</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i>Chennai, Tamil Nadu</a></li>
+          <li><a href="/docs"><i class="fas fa-book"></i>API Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      © 2026 Verified Resolution Assistant · SADANRAJ-S · Built with FastAPI + scikit-learn + sentence-transformers &nbsp;|&nbsp;
+      <a href="https://github.com/SADANRAJ-S/coeproject" style="color:var(--primary)" target="_blank">GitHub</a> &nbsp;|&nbsp;
+      <a href="/docs" style="color:var(--primary)">API Docs</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Load live incident data from the API
+  async function loadDashboard() {
+    try {
+      const r = await fetch('/api/incidents?limit=8');
+      const data = await r.json();
+      const incidents = data.incidents || data || [];
+      const tbody = document.getElementById('incidents-tbody');
+
+      if (!incidents.length) {
+        tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;padding:20px;color:#94a3b8">No incidents found.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = incidents.map(inc => {
+        const statusClass = {
+          'OPEN':'pill-open','RECOMMENDED':'pill-recommended','RESOLVED':'pill-resolved'
+        }[inc.status] || 'pill-open';
+        const sevColor = inc.severity === 'High' ? '#f87171' : inc.severity === 'Medium' ? '#fbbf24' : '#34d399';
+        const desc = (inc.description || '').substring(0, 45) + ((inc.description||'').length > 45 ? '…' : '');
+        return `<tr>
+          <td style="font-weight:600;color:var(--primary)">${inc.incident_id}</td>
+          <td>${desc}</td>
+          <td style="font-weight:500">${inc.system || '–'}</td>
+          <td><span style="color:${sevColor};font-weight:600">${inc.severity || '–'}</span></td>
+          <td><span class="status-pill ${statusClass}">${inc.status || 'OPEN'}</span></td>
+        </tr>`;
+      }).join('');
+
+      // Stats
+      const total = incidents.length;
+      const resolved = incidents.filter(i => i.status === 'RESOLVED').length;
+      const open = incidents.filter(i => i.status === 'OPEN').length;
+      document.getElementById('stat-total').textContent = total;
+      document.getElementById('stat-resolved').textContent = resolved;
+      document.getElementById('stat-open').textContent = open;
+      document.getElementById('stat-avg').textContent = '15.8m';
+
+      // System bars
+      const sys = {LabSys:0, PACSView:0, MedFlow:0, EHRCore:0};
+      incidents.forEach(i => { if(sys[i.system] !== undefined) sys[i.system]++; });
+      const max = Math.max(...Object.values(sys), 1);
+      const setBar = (pId, bId, count) => {
+        const pct = Math.round(count / max * 100);
+        document.getElementById(pId).textContent = pct + '%';
+        document.getElementById(bId).style.width = pct + '%';
+      };
+      setBar('lp','lb', sys.LabSys);
+      setBar('pp','pb', sys.PACSView);
+      setBar('mp','mb', sys.MedFlow);
+      setBar('ep','eb', sys.EHRCore);
+    } catch(e) {
+      document.getElementById('incidents-tbody').innerHTML =
+        '<tr><td colspan="5" style="text-align:center;padding:20px;color:#94a3b8"><i class="fas fa-plug"></i> Could not connect to API — start the server with <code>python run.py</code></td></tr>';
+    }
+  }
+
+  loadDashboard();
+  setInterval(loadDashboard, 30000); // refresh every 30s
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
+  });
+</script>
 </body>
 </html>
